@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamentos - Pizzaria Bella Massa</title>
+    <meta name="author" content="Gui">
+    <meta name="description" content="Pagina de Pagamento.">
+    <link rel="icon" href="../ASSETS/IMG/Antigas/Logo da Pizzaria Bell Massa (2).png" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/style_pagamentos.css">
+    <script defer src="../SCRIPT/script_pagamentos.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="imagem-logo">
+            <img src="../ASSETS/IMG/Antigas/Logo da Pizzaria Bell Massa (2).png" alt="Logo da Pizzaria Bella Massa">
+            <h1>Pizzaria Bella Massa</h1>
+        </div>
+        <br>
+        <nav>
+            <ul class="menu">
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="sobrenos.html">Sobre Nós</a></li>
+                <li><a href="Cardapio.html">Cardápio</a></li>
+                <li class="dropdown">
+                    <a href="#">Faça sua Pizza</a>
+                    <ul class="submenu">
+                        <li><a href="Faça.html">Salgada</a></li>
+                        <li><a href="faça_doce.html">Doce</a></li>
+                    </ul>
+                </li>
+                <li><a href="pagamentos.html">Pagamento</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Finalizar Pedido</h2>
+        <form id="form-pagamento">
+            <div class="pagamento">
+                <section class="card">
+                    <div class="resumo-pedido">
+                        <h3>Resumo do Pedido</h3>
+                        <ul>
+                            <li>
+                                <p>Pizza Calabresa (Grande)</p>
+                                <p>1 un</p>
+                            </li>
+                            <li>
+                                <p>Pizza Margherita (Média)</p>
+                                <p>1 un</p>
+                            </li>
+                            <li>
+                                <p>Refrigerante 350ml</p>
+                                <p>2 un</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div class="total">
+                        <div class="linha">
+                            <p>Subtotal</p>
+                            <p>R$ —</p>
+                        </div>
+                        <div class="linha">
+                            <p>Taxa de Entrega</p>
+                            <p>R$ —</p>
+                        </div>
+                        <div class="linha">
+                            <p><strong>Total</strong></p>
+                            <p><strong>R$ —</strong></p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="card">
+                    <h3>Seus Dados</h3>
+                    <div class="grid duas-colunas">
+                        <div class="campo">
+                            <label for="nome">Nome completo</label>
+                            <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                        </div>
+                        <div class="campo">
+                            <label for="telefone">Telefone</label>
+                            <input type="tel" id="telefone" name="telefone" placeholder="(11) 90000-0000" required>
+                        </div>
+                        <div class="campo">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="seuemail@email.com" required>
+                        </div>
+                    </div>
+                    <br>
+                    <h3>Entrega ou Retirada</h3>
+                    <div class="botoes-pagamento">
+                        <div class="forma-pagamento">
+                            <input type="radio" name="modalidade" id="opt-entrega" checked>
+                            <label for="opt-entrega">Entrega</label>
+                        </div>
+                        <div class="forma-pagamento">
+                            <input type="radio" name="modalidade" id="opt-retirada">
+                            <label for="opt-retirada">Retirada</label>
+                        </div>
+                    </div>
+
+                    <div class="grid duas-colunas">
+                        <div class="campo col-span-2">
+                            <label for="endereco">Endereço</label>
+                            <input type="text" id="endereco" name="endereco" placeholder="Rua e complemento">
+                        </div>
+                        <div class="campo">
+                            <label for="numero">Número</label>
+                            <input type="text" id="numero" name="numero" placeholder="Nº" inputmode="numeric">
+                        </div>
+                        <div class="campo">
+                            <label for="bairro">Bairro</label>
+                            <input type="text" id="bairro" name="bairro" placeholder="Bairro">
+                        </div>
+                        <div class="campo">
+                            <label for="cidade">Cidade</label>
+                            <input type="text" id="cidade" name="cidade" placeholder="Cidade">
+                        </div>
+                        <div class="campo">
+                            <label for="cep">CEP</label>
+                            <input type="text" id="cep" name="cep" placeholder="00000-000" inputmode="numeric">
+                        </div>
+                    </div>
+                    <div class="campo">
+                        <label for="obs">Observações para entrega</label>
+                        <textarea id="obs" name="obs" rows="2"
+                            placeholder="Ex.: Interfone quebrado, portão marrom..."></textarea>
+                    </div>
+                </section>
+
+                <section class="card pagamento-forma">
+                    <h3>Forma de Pagamento</h3>
+                    <div class="botoes-pagamento">
+                        <div class="forma-pagamento">
+                            <input type="radio" name="pagto" id="pagto-cartao" value="cartao" checked>
+                            <label for="pagto-cartao">Cartão</label>
+                        </div>
+                        <div class="forma-pagamento">
+                            <input type="radio" name="pagto" id="pagto-pix" value="pix">
+                            <label for="pagto-pix">PIX</label>
+                        </div>
+                        <div class="forma-pagamento">
+                            <input type="radio" name="pagto" id="pagto-dinheiro" value="dinheiro">
+                            <label for="pagto-dinheiro">Dinheiro</label>
+                        </div>
+                    </div>
+
+                    <div class="sessao-pagamento" id="sessao-cartao">
+                        <div class="campo">
+                            <label for="numero-cartao">Número do cartão</label>
+                            <input type="text" id="numero-cartao" name="numero-cartao" placeholder="0000 0000 0000 0000"
+                                inputmode="numeric" autocomplete="cc-number">
+                        </div>
+                        <div class="campo">
+                            <label for="nome-cartao">Nome impresso</label>
+                            <input type="text" id="nome-cartao" name="nome-cartao" placeholder="Como está no cartão"
+                                autocomplete="cc-name">
+                        </div>
+                        <div class="grid duas-colunas">
+                            <div class="campo">
+                                <label for="validade">Validade</label>
+                                <input type="text" id="validade" name="validade" placeholder="MM/AA" inputmode="numeric"
+                                    autocomplete="cc-exp">
+                            </div>
+                            <div class="campo">
+                                <label for="cvv">CVV</label>
+                                <input type="password" id="cvv" name="cvv" placeholder="***" inputmode="numeric"
+                                    autocomplete="cc-csc">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="campo">
+                        <label for="pix">Chave PIX</label>
+                        <input type="text" id="pix" name="pix" placeholder="Digite sua chave PIX">
+                    </div>
+                </section>
+
+                <section class="card-imagem">
+                    <div class="imagem">
+                        <img src="../ASSETS/IMG/Antigas/Obrigado pela preferençia (1).png"
+                            alt="Obrigado pela preferência">
+                    </div>
+                </section>
+            </div>
+            <button class="btn-enviar" type="submit">Finalizar Pedido</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Pizzaria Bella Massa. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

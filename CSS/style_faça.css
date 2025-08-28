@@ -1,0 +1,232 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FAF7F3;
+}
+
+header {
+    background-color: #8A0000;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid transparent;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+header ul li a:hover {
+    text-decoration: underline;
+    background-color: #C83F12;
+    border-color: white;
+}
+
+main {
+    padding: 20px;
+    background-color: #F0E4D3;
+    width: 100%;
+}
+
+main h1 {
+    color: #FF4500;
+    font-size: 2em;
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+
+main h3 {
+    color: #FF8C00;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.pizza-customização {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.opções {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #FAF7F3;
+    border-radius: 8px;
+    border-left: 4px solid #FF4500;
+}
+
+.opção {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.option-item:hover {
+    background-color: #FFF8F0;
+}
+
+.option-item input[type="checkbox"] {
+    margin-right: 12px;
+    transform: scale(1.2);
+    accent-color: #FF4500;
+}
+
+.option-item label {
+    color: #333;
+    font-size: 1.1em;
+    cursor: pointer;
+    flex-grow: 1;
+}
+
+/* Estilos para parágrafos que funcionam como labels */
+main p {
+    color: #333;
+    font-size: 1.1em;
+    margin: 8px 0;
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+/* Botão de submit (quando for adicionado) */
+button {
+    background-color: #FF4500;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+    align-self: center;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+.submit-btn:hover {
+    background-color: #E63900;
+}
+
+/* Estilos para o resumo da pizza (quando for adicionado) */
+.pizza-summary {
+    background-color: #8A0000;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.pizza-summary h3 {
+    color: #FFD700;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #FFD700;
+    text-align: center;
+    margin-top: 15px;
+}
+
+footer {
+    background-color: #8A0000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.botao {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu li a {
+    display: block;
+    padding: 12px 16px;
+}
+
+.dropdown > a {
+    position: relative;
+    padding-right: 24px;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #8A0000;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 200px;
+    border-radius: 0 0 8px 8px;
+}
+
+.submenu li a {
+    padding: 12px 16px;
+    color: white;
+    display: block;
+}
+
+.submenu li a:hover {
+    background-color: #C83F12;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}

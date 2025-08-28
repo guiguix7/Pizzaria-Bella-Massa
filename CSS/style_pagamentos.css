@@ -1,0 +1,382 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FAF7F3;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #303030;
+    width: 100%;
+}
+
+.imagem-logo {
+    display: flex;
+    align-items: center;
+    gap: 400px;
+}
+
+.imagem-logo img {
+    height: 80px;
+    width: auto;
+    border-radius: 10px;
+}
+
+.imagem-logo h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    justify-content: center;
+}
+
+header {
+    background-color: #8A0000;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid transparent;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    background-color: #C83F12;
+    border-color: white;
+}
+
+main {
+    padding: 20px;
+    width: 100%;
+    background-color: #F0E4D3;
+}
+
+h2 {
+    color: #8A0000;
+    font-size: 2em;
+    margin: 10px 0 20px 0;
+    text-align: center;
+}
+
+h3 {
+    color: #8A0000;
+    margin: 0 0 10px 0;
+}
+
+.pagamento {
+    max-width: 1100px;
+    margin: 0 auto 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.linha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.card {
+    background: #fff5e6;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .08);
+}
+
+.resumo-pedido ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.resumo-pedido li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #EEE;
+}
+
+.resumo-pedido li:last-child {
+    border-bottom: none;
+}
+
+.card label {
+    display: block;
+    font-weight: 600;
+    margin: 10px 0 6px;
+}
+
+.card input,
+.card select,
+.card textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #CCC;
+    border-radius: 10px;
+    font-size: 1rem;
+    background: #fff;
+    color: #303030;
+    box-sizing: border-box;
+}
+
+.card input:focus,
+.card select:focus,
+.card textarea:focus {
+    border-color: #8A0000;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(138, 0, 0, 0.12);
+}
+
+button {
+    background-color: #8A0000;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    font-size: 1em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform .02s;
+    text-align: center;
+}
+
+.btn-primario {
+    background-color: #8A0000;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    font-size: 1em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform .02s;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 8px 8px 0;
+}
+
+button:hover,
+.btn-primario:hover {
+    background-color: #C83F12;
+}
+
+footer {
+    background-color: #8A0000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.pagamento-forma {
+    background: #fff5e6;
+    border-radius: 10px;
+    padding: 18px 22px 26px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, .08);
+    border: 1px solid #f0dcc6;
+    margin-top: 16px;
+    text-align: center;
+}
+
+.forma-pagamento input[type="radio"] {
+    display: none;
+}
+
+.forma-pagamento label {
+    display: inline-block;
+    min-width: 120px;
+    padding: 10px 16px;
+    border: 2px solid #8A0000;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #8A0000;
+    font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color .2s ease, color .2s ease, border-color .2s ease, transform .02s;
+    text-align: center;
+}
+
+.forma-pagamento input[type="radio"]:checked+label {
+    background: #8A0000;
+    color: #ffffff;
+    border-color: #8A0000;
+}
+
+.forma-pagamento label:hover {
+    background: #C83F12;
+    border-color: #C83F12;
+    color: #fff;
+}
+
+.sessao-pagamento {
+    margin-top: 18px;
+    padding-top: 18px;
+    border-top: 1px solid #eed7bf;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.pagamento-forma label {
+    display: block;
+    font-weight: 600;
+    margin: 12px 0 6px;
+    color: #5b1f1f;
+}
+
+.pagamento-forma input,
+.pagamento-forma select,
+.pagamento-forma textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #CCC;
+    border-radius: 8px;
+    font-size: 1em;
+    background: #fff;
+    color: #303030;
+    outline: none;
+    transition: box-shadow .15s ease, border-color .15s ease;
+}
+
+.pagamento-forma input:focus,
+.pagamento-forma select:focus,
+.pagamento-forma textarea:focus {
+    border-color: #8A0000;
+    box-shadow: 0 0 0 3px rgba(138, 0, 0, 0.12);
+}
+
+.botoes-pagamento {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 4px 0 10px;
+    padding: 0;
+}
+
+main h3 {
+    text-align: center;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu li a {
+    display: block;
+    padding: 12px 16px;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #8A0000;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 200px;
+    border-radius: 0 0 8px 8px;
+}
+
+.submenu li a {
+    padding: 12px 16px;
+    color: white;
+    display: block;
+}
+
+.submenu li a:hover {
+    background-color: #C83F12;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+.card-imagem {
+    background: #fff5e6;
+    border-radius: 10px;
+    padding: 18px 22px 26px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, .08);
+    border: 1px solid #f0dcc6;
+}
+
+.imagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-enviar {
+    background-color: #8A0000;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    font-size: 1em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform .02s;
+    text-align: center;
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+    margin: 16px auto;
+}
+
+.btn-enviar:hover {
+    background-color: #C83F12;
+}

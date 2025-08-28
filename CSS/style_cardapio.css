@@ -1,0 +1,144 @@
+body {
+
+    margin: 0;
+    padding: 0;
+    background-color: #FAF7F3; 
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #8A0000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 100%;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+header ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    background-color: #F0E4D3;
+    width: 100%;
+}
+
+main h2 {
+    color: #FF4500;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+main ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #FF8C00;
+}
+
+main ul li {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+footer {
+    background-color: #8A0000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+nav ul li a {
+    border: 2px solid transparent;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #C83F12; 
+    border-color: white;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu li a {
+    display: block;
+    padding: 12px 16px;
+}
+
+.dropdown > a {
+    position: relative;
+    padding-right: 24px;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #8A0000;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 200px;
+    border-radius: 0 0 8px 8px;
+}
+
+.submenu li a {
+    padding: 12px 16px;
+    color: white;
+    display: block;
+}
+
+.submenu li a:hover {
+    background-color: #C83F12;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}

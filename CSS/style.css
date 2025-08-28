@@ -1,0 +1,217 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #FAF7F3;
+}
+
+.carrossel {
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.slides {
+    width: 300%;
+    height: 100%;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 100%;
+    transition: 0.6s;
+}
+
+.slide img {
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+#slide1:checked ~ .first {
+    margin-left: 0;
+}
+
+#slide2:checked ~ .first {
+    margin-left: -100%;
+}
+
+#slide3:checked ~ .first {
+    margin-left: -200%;
+}
+
+.navigation-manual {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0 5px;
+}
+
+.manual-btn:hover {
+    background: #fff;
+}
+
+header {
+    background-color: #8A0000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    width: 100%;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+header ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    width: 100%;
+    background-color: #F0E4D3;
+}
+
+h2 {
+    color: #FF4500;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #FF8C00;
+    font-size: 1.2em;
+}
+
+footer {
+    background-color: #8A0000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+    color: white;
+}
+
+nav ul li a {
+    border: 2px solid transparent;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #C83F12;
+    border-color: white;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu li a {
+    display: block;
+    padding: 12px 16px;
+}
+
+.dropdown>a {
+    position: relative;
+    padding-right: 24px;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #8A0000;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 200px;
+    border-radius: 0 0 8px 8px;
+}
+
+.submenu li a {
+    padding: 12px 16px;
+    color: white;
+    display: block;
+}
+
+.submenu li a:hover {
+    background-color: #C83F12;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+.imagem-logo {
+    display: flex;
+    align-items: center;
+    gap: 400px;
+}
+
+.imagem-logo img {
+    height: 80px;
+    width: auto;
+    border-radius: 10px;
+}
+
+.imagem-logo h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    justify-content: center;
+}
