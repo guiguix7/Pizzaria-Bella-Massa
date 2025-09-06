@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Gui">
+    <meta name="author" content="Gui, Caio, Victor, Davi">
     <meta name="keywords" content="Pizza, Cardápio, Bella Massa">
     <meta name="description" content="Confira nosso cardápio completo de pizzas!">
     <link rel="icon" href="../ASSETS/IMG/Antigas/Logo da Pizzaria Bell Massa (2).png" type="image/x-icon">
@@ -14,7 +14,10 @@
 
 <body>
     <header>
-        <h1>Cardápio</h1>
+        <div class="imagem-logo">
+            <img src="../ASSETS/IMG/Antigas/Logo da Pizzaria Bell Massa (2).png" alt="Logo da Pizzaria Bella Massa">
+            <h1>PIZZARIA BELLA MASSA</h1>
+        </div>
         <br>
         <nav>
             <ul class="menu">
@@ -22,7 +25,7 @@
                 <li><a href="sobrenos.html">Sobre Nós</a></li>
                 <li><a href="Cardapio.html">Cardápio</a></li>
                 <li class="dropdown">
-                    <a href="#">Faça sua Pizza</a>
+                    <a href="#">Monte sua Pizza</a>
                     <ul class="submenu">
                         <li><a href="Faça.html">Salgada</a></li>
                         <li><a href="faça_doce.html">Doce</a></li>
@@ -34,52 +37,285 @@
         </nav>
     </header>
     <main>
-        <section>
-            <h2>Pizzas Salgadas</h2>
-            <ul>
-                <li>Calabresa - R$ 35,00</li><img src="../calabresa.png.jpg" style="height: 450px;"
-                    alt="Pizza de calabresa">
-                <li>Frango com Catupiry</li><img src="" alt="">
-                <li>Marguerita</li><img src="" alt="">
-                <li>Quatro Queijos - R$ 4</li><img src="" alt="">
-                <li>Strogonoff - R$ 49,00</li><img src="" alt="">
-            </ul>
-        </section>
-        <section>
-            <h2>Pizzas Doces</h2>
-            <ul>
-                <li>Chocolate - R$ 30,00</li><img src="" alt="">
-                <li>Banana com Chocolate - R$ 34,00</li><img src="" alt="">
-                <li>Kitkat - R$ 49,00</li><img src="" alt="">
-                <li>Morango com chocolate - R$ 40,00</li><img src="" alt="">
-                <li>Morango, Kiwi e Banana com Chocolate - R$ 46,00</li><img src="" alt="">
-            </ul>
-        </section>
-        <section>
-            <h2>Sucos</h2>
-            <ul>
-                <li>Sucos - R$ 9,00</li><img src="" alt="">
-            </ul>
-        </section>
-        <section>
-            <h2>Refrigerantes</h2>
-            <ul>
-                <li>lata - R$ 6,00</li><img src="" alt="">
-                <li>2 Litros - R$ 12,00</li><img src="" alt="">
-        </section>
-        <section>
-            <h2>Bebidas Extras</h2>
-            <ul>
-                <li>Água Mineral - R$ 3,00</li><img src="" alt="">
-                <li>Cerveja - R$ 10,00</li><img src="" alt="">
-                <li>Vinho - R$ 15,00</li><img src="" alt="">
-                <li>Caipirinhas - R$ 18,00</li><img src="" alt="">
-            </ul>
-        </section>
+        <div class="cardapio">
+            <div class="categoria">
+                <br>
+                <h3>Pizzas Salgadas</h3>
+                <ul>
+                    <li>
+                        <div class="carrinho">
+                            <label>
+                                <input type="checkbox">Adicionar
+                            </label>
+                            <select class="tamanho">
+                                <option value="1">Pequena - R$--,--</option>
+                                <option value="2">Média - R$--,--</option>
+                                <option value="3">Grande - R$--,--</option>
+                            </select>
+                        </div>
+                        <h4>Calabresa</h4>
+                        <p>Molho de Tomate, Queijo Mussarela, Calabresa Fatiada, Cebola e Orégano.</p>
+                        <p><strong>Preços: Pequena R$--,-- | Média R$--,-- | Grande R$--,--</strong></p>
+                        <img class="preview" src="../ASSETS/IMG/Pizza Salgada/Pizza de Calabresa.png"
+                            alt="Pizza Calabresa">
+                    </li>
+                    <li>
+                        <div class="carrinho">
+                            <label>
+                                <input type="checkbox">Adicionar
+                            </label>
+                            <select class="tamanho">
+                                <option value="1">Pequena - R$--,--</option>
+                                <option value="2">Média - R$--,--</option>
+                                <option value="3">Grande - R$--,--</option>
+                            </select>
+                        </div>
+                        <h4>Margherita</h4>
+                        <p>Molho de Tomate, Queijo Mussarela, Tomate Fatiado, Manjericão Fresco e Azeite de Oliva.</p>
+                        <p><strong>Preços: Pequena R$--,-- | Média R$--,-- | Grande R$--,--</strong></p>
+                        <img class="preview" src="../ASSETS/IMG/Pizza Doce/PIzza de Marguerita.png"
+                            alt="Pizza Margherita">
+                    </li>
+                    <li>
+                        <div class="carrinho">
+                            <label>
+                                <input type="checkbox"> Adicionar
+                            </label>
+                            <select class="tamanho">
+                                <option value="1">Pequena - R$--,--</option>
+                                <option value="2">Média - R$--,--</option>
+                                <option value="3">Grande - R$--,--</option>
+                            </select>
+                        </div>
+                        <h4>Frango com Catupiry</h4>
+                        <p>Molho de Tomate, Queijo Mussarela, Frango Desfiado, Catupiry e Orégano.</p>
+                        <p><strong>Preços: Pequena R$--,-- | Média R$--,-- | Grande R$--,--</strong></p>
+                        <img class="preview" src="../ASSETS/IMG/Pizza Salgada/Pizza de Frango com Catupiry.png"
+                            alt="Pizza Frango com Catupiry">
+                    </li>
+                    <li>
+                        <div class="carrinho">
+                            <label>
+                                <input type="checkbox"> Adicionar
+                            </label>
+                            <select class="tamanho">
+                                <option value="1">Pequena - R$--,--</option>
+                                <option value="2">Média - R$--,--</option>
+                                <option value="3">Grande - R$--,--</option>
+                            </select>
+                        </div>
+                        <h4>Strogonoff</h4>
+                        <p>Molho de Tomate, Queijo Mussarela, Strogonoff, Batata-palha, Gorgonzola e Parmesão.</p>
+                        <p><strong>Preços: Pequena R$--,-- | Média R$--,-- | Grande R$--,--</strong></p>
+                        <img class="preview" src="../ASSETS/IMG/Pizza Salgada/Pizza de Strogonoff.png"
+                            alt="Pizza Strogonoff">
+                    </li>
+                    <li>
+                        <div class="carrinho">
+                            <label>
+                                <input type="checkbox"> Adicionar
+                            </label>
+                            <select class="tamanho">
+                                <option value="1">Pequena - R$--,--</option>
+                                <option value="2">Média - R$--,--</option>
+                                <option value="3">Grande - R$--,--</option>
+                            </select>
+                        </div>
+                        <h4>Queijo</h4>
+                        <p>Molho de Tomate, Queijo Mussarela, Calabresa Fatiada, Cebola e Orégano.</p>
+                        <p><strong>Preços: Pequena R$--,-- | Média R$--,-- | Grande R$--,--</strong></p>
+                        <img class="preview" src="../ASSETS/IMG/Antigas/Pizza de Queijo.png" alt="Pizza de Queijo">
+                    </li>
+                    <li>
+                        <div class="carrinho">
+                            <label>
+                                <input type="checkbox"> Adicionar
+                            </label>
+                            <select class="tamanho">
+                                <option value="1">Pequena - R$--,--</option>
+                                <option value="2">Média - R$--,--</option>
+                                <option value="3">Grande - R$--,--</option>
+                            </select>
+                        </div>
+                        <h4>Margherita</h4>
+                        <p>Molho de Tomate, Queijo Mussarela, Tomate Fatiado, Manjericão Fresco e Azeite de Oliva.</p>
+                        <p><strong>Preços: Pequena R$--,-- | Média R$--,-- | Grande R$--,--</strong></p>
+                        <img class="preview" src="../ASSETS/IMG/Pizza Doce/PIzza de Marguerita.png"
+                            alt="Pizza Margherita">
+                    </li>
+                    <li>
+                        <div class="carrinho">
+                            <label>
+                                <input type="checkbox"> Adicionar
+                            </label>
+                            <select class="tamanho">
+                                <option value="1">Pequena - R$--,--</option>
+                                <option value="2">Média - R$--,--</option>
+                                <option value="3">Grande - R$--,--</option>
+                            </select>
+                        </div>
+                        <h4>Margherita</h4>
+                        <p>Molho de Tomate, Queijo Mussarela, Tomate Fatiado, Manjericão Fresco e Azeite de Oliva.</p>
+                        <p><strong>Preços: Pequena R$--,-- | Média R$--,-- | Grande R$--,--</strong></p>
+                        <img class="preview" src="../ASSETS/IMG/Pizza Doce/PIzza de Marguerita.png"
+                            alt="Pizza Margherita">
+                    </li>
+                    <li>
+                        <div class="carrinho">
+                            <label>
+                                <input type="checkbox"> Adicionar
+                            </label>
+                            <select class="tamanho">
+                                <option value="1">Pequena - R$--,--</option>
+                                <option value="2">Média - R$--,--</option>
+                                <option value="3">Grande - R$--,--</option>
+                            </select>
+                        </div>
+                        <h4>Frango com Catupiry</h4>
+                        <p>Molho de Tomate, Queijo Mussarela, Pepperoni Fatiado e Orégano.</p>
+                        <p><strong>Preços: Pequena R$--,-- | Média R$--,-- | Grande R$--,--</strong></p>
+                        <img class="preview" src="../ASSETS/IMG/Pizza Salgada/Pizza de Frango com Catupiry.png"
+                            alt="Pizza Frango com Catupiry">
+                    </li>
+                </ul>
+            </div>
+            <div class="categoria">
+                <h3>Pizzas Doces</h3>
+                <ul>
+                    <li>
+                        <div class="carrinho">
+                            <label>
+                                <input type="checkbox"> Adicionar
+                            </label>
+                            <select class="tamanho">
+                                <option value="20">Pequena - R$--,--</option>
+                                <option value="30">Média - R$--,--</option>
+                                <option value="40">Grande - R$--,--</option>
+                            </select>
+                        </div>
+                        <h4>Chocolate</h4>
+                        <p>Massa doce, Chocolate ao Leite e Granulado.</p>
+                        <p><strong>Preços: Pequena R$--,-- | Média R$--,-- | Grande R$--,--</strong></p>
+                        <img class="preview" src="../ASSETS/IMG/Pizza Doce/Pizza de Chocolate.png"
+                            alt="Pizza de Chocolate">
+                    </li>
+                    <li>
+                        <div class="carrinho">
+                            <label>
+                                <input type="checkbox"> Adicionar
+                            </label>
+                            <select class="tamanho">
+                                <option value="20">Pequena - R$--,--</option>
+                                <option value="30">Média - R$--,--</option>
+                                <option value="40">Grande - R$--,--</option>
+                            </select>
+                        </div>
+                        <h4>Chocolate com Morango</h4>
+                        <p>Massa Doce, Chocolate Branco e Morangos Fatiados.</p>
+                        <p><strong>Preços: Pequena R$--,-- | Média R$--,-- | Grande R$--,--</strong></p>
+                        <img class="preview" src="../ASSETS/IMG/Pizza Doce/Pizza de Morango com Chocolate.png"
+                            alt="Pizza de Chocolate com Morango">
+                    </li>
+                    <li>
+                        <div class="carrinho">
+                            <label>
+                                <input type="checkbox">Adicionar
+                            </label>
+                            <select class="tamanho">
+                                <option value="20">Pequena - R$--,--</option>
+                                <option value="30">Média - R$--,--</option>
+                                <option value="40">Grande - R$--,--</option>
+                            </select>
+                        </div>
+                        <h4>Kikat</h4>
+                        <p>Massa Doce, Chocolate Kitkat Derretido e Pedaços de Kitkat.</p>
+                        <p><strong>Preços: Pequena R$--,-- | Média R$--,-- | Grande R$--,--</strong></p>
+                        <img class="preview" src="../ASSETS/IMG/Pizza Doce/Pizza de KitKat.png" alt="Pizza de KitKat">
+                    </li>
+                    <li>
+                        <div class="carrinho">
+                            <label>
+                                <input type="checkbox"> Adicionar
+                            </label>
+                            <select class="tamanho">
+                                <option value="20">Pequena - R$--,--</option>
+                                <option value="30">Média - R$--,--</option>
+                                <option value="40">Grande - R$--,--</option>
+                            </select>
+                        </div>
+                        <h4>Chocolate com Banana</h4>
+                        <p>Massa Doce, Chocolate ao Leite, Fatias de Banana e Canela em pó.</p>
+                        <p><strong>Preços: Pequena R$--,-- | Média R$--,-- | Grande R$--,--</strong></p>
+                        <img class="preview" src="../ASSETS/IMG/Pizza Doce/Pizza de Chocolate com Banana.png"
+                            alt="Pizza de Chocolate com Banana">
+                    </li>
+                </ul>
+            </div>
+
+            <div class="categoria">
+                <h3>Bebidas</h3>
+                <ul>
+                    <li>
+                        <div class="carrinho">
+                            <label>
+                                <input type="checkbox"> Adicionar
+                            </label>
+                            <input type="number" min="1" max="10" value="1" class="quantidade">
+                        </div>
+                        <h4>Coca-Cola</h4>
+                        <p>Refrigerante Coca-Cola 350ml.</p>
+                        <p><strong>Preço: R$--,--</strong></p>
+                        <img class="preview"
+                            src="../ASSETS/IMG/Refrigerantes/Refrigerantes Coca-Cola, Sprite, Pepsi e Fanta.png"
+                            alt="Coca-Cola 350ml">
+                    </li>
+                    <li>
+                        <div class="carrinho">
+                            <label>
+                                <input type="checkbox"> Adicionar
+                            </label>
+                            <input type="number" min="1" max="10" value="1" class="quantidade">
+                        </div>
+                        <h4>Caipirinha</h4>
+                        <p>Drink feito com cachaça, limão e açúcar.</p>
+                        <p><strong>Preço: R$--,--</strong></p>
+                        <img class="preview" src="../ASSETS/IMG/Bebidas Extras/Caipirinhas.jpg" alt="Caipirinha">
+                    </li>
+                    <li>
+                        <div class="carrinho">
+                            <label>
+                                <input type="checkbox"> Adicionar
+                            </label>
+                            <input type="number" min="1" max="10" value="1" class="quantidade">
+                        </div>
+                        <h4>Cerveja</h4>
+                        <p>Garrafa de Cerveja 350ml.</p>
+                        <p><strong>Preço: R$--,--</strong></p>
+                        <img class="preview" src="../ASSETS/IMG/Bebidas Extras/Cerveja.png" alt="Cerveja">
+                    </li>
+                    <li>
+                        <div class="carrinho">
+                            <label>
+                                <input type="checkbox"> Adicionar
+                            </label>
+                            <input type="number" min="1" max="10" value="1" class="quantidade">
+                        </div>
+                        <h4>Vinho</h4>
+                        <p>Taça de Vinho 350ml.</p>
+                        <p><strong>Preço: R$--,--</strong></p>
+                        <img class="preview" src="../ASSETS/IMG/Bebidas Extras/Vinho.png" alt="Vinho">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="botao">
+            <a href="pagamentos.html"><button>Finalizar Pedido</button></a>
+        </div>
     </main>
     <footer>
         <p>&copy; 2025 Pizzaria Bella Massa. Todos os direitos reservados.</p>
     </footer>
+    <script src="../SCRIPT/script_cardapio.js"></script>
 </body>
 
 </html>

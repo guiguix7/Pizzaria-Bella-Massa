@@ -1,31 +1,48 @@
 body {
-    
     margin: 0;
     padding: 0;
-    background-color: #FAF7F3; 
-    width: 100%;
-}
-
-html{
-    font-family: Arial, Helvetica, sans-serif;
-    width: 97.7%;
+    background-color: #FFFDF0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 header {
     background-color: #8A0000;
     color: white;
-    padding: 20px;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.imagem-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.imagem-logo img {
+    height: 60px;
+    border-radius: 8px;
+}
+
+.imagem-logo h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    position: relative;
-    width: 100%;
-    border: 2px solid #8A0000;
+    text-align: center;
+    justify-content: center;
 }
 
 header h1 {
     margin: 0;
     font-size: 2.5em;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: default;
 }
 
 header ul {
@@ -45,64 +62,6 @@ header ul li a {
     font-weight: bold;
 }
 
-header ul li a:hover {
-    text-decoration: underline;
-}
-
-main {
-    padding: 20px;
-    background-color: #F0E4D3;
-    width: 100%;
-}
-
-main h2, main h3 {
-    color: #ff0000;
-    margin-bottom: 10px;
-}
-
-main p {
-    color: #000000bd; 
-    font-size: 1.2em;
-    line-height: 1.6;
-}
-
-main ul {
-    list-style-type: disc;
-    margin-left: 20px;
-    color: #000000; 
-}
-
-main ul li {
-    margin-bottom: 10px;
-}
-
-footer {
-    background-color: #8A0000;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-footer p {
-    margin: 0;
-    font-size: 0.9em;
-}
-
-nav ul li a {
-    border: 2px solid transparent;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-}
-
-nav ul li a:hover {
-    background-color: #C83F12; 
-    border-color: white;
-}
-
 .menu {
     list-style: none;
     padding: 0;
@@ -120,7 +79,7 @@ nav ul li a:hover {
     padding: 12px 16px;
 }
 
-.dropdown > a {
+.dropdown>a {
     position: relative;
     padding-right: 24px;
 }
@@ -152,25 +111,211 @@ nav ul li a:hover {
     display: block;
 }
 
-.imagem-logo {
-    display: flex;
-    align-items: center;
-    gap: 400px;
+nav ul li a {
+    border: 2px solid transparent;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
 }
 
-.imagem-logo img {
-    height: 80px;
-    width: auto;
-    border-radius: 10px;
-    justify-content: left;
-    text-align: left;
+nav ul li a:hover {
+    background-color: #C83F12;
+    border-color: white;
 }
 
-.imagem-logo h1 {
-    font-size: 2.5em;
-    margin: 0;
-    color: white;
+main {
+    padding: 15px 30px;
+    background-color: #F0E4D3;
+    font-family: Epunda Slab, serif;
+}
+
+main h2,
+main h3 {
+    color: #ff0000;
+    margin-bottom: 10px;
+}
+
+main p {
     font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #000000bd;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+main ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #000000;
+}
+
+main ul li {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #000000bd;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+main .texto {
+    max-width: 1100px;
+    margin: 24px auto 40px;
+    padding: 0 24px;
+    display: grid;
+    gap: 20px;
+}
+
+main .texto section {
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    padding: 18px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: transform .15s ease, box-shadow .15s ease;
+    cursor: default;
+}
+
+main .texto section:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+}
+
+main .texto section h2,
+main .texto section h3 {
+    margin: 0 0 10px 0;
+    color: #8B4513;
+}
+
+main .texto section p {
+    margin: 8px 0;
+    color: #333333;
+    line-height: 1.6;
+}
+
+main .texto section ul {
+    margin: 8px 0 0 0;
+    padding-left: 18px;
+}
+
+main .texto section li {
+    margin: 6px 0;
+    color: #444444;
+}
+
+.texto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+main .texto section.historia {
+    grid-column: 1 / -1;
+}
+
+footer {
+    background-color: #8A0000;
+    color: white;
+    padding: 15px 30px;
+    position: relative;
     text-align: center;
-    justify-content: center;
+    display: flex;
+}
+
+footer .texto-footer {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer h4 {
+    margin: 0 0 0 auto;
+    font-size: 0.9em;
+    cursor: default;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+footer nav ul {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+footer nav ul li {
+    margin: 0;
+}
+
+@media (min-width: 900px) {
+    main .texto {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main .texto section:first-child {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .imagem-logo h1 {
+        font-size: 1.8em;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .menu li {
+        margin: 5px 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    main .texto {
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+    }
+
+    footer {
+        font-size: 0.8em;
+        padding: 10px;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    footer .texto-footer {
+        flex-direction: column;
+        gap: 10px;
+    }
 }

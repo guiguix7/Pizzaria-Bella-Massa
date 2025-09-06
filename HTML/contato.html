@@ -4,44 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Gui">
+    <meta name="author" content="Gui, Pedro, Victor">
     <meta name="keywords" content="Pizza, Contato, Bella Massa">
     <meta name="description" content="Entre em contato conosco para dúvidas ou sugestões!">
     <link rel="icon" href="../ASSETS/IMG/Antigas/Logo da Pizzaria Bell Massa (2).png" type="image/x-icon">
     <link rel="stylesheet" href="../CSS/style_contato.css">
     <link rel="stylesheet" href="../SCRIPT/script_contato.js">
-    <title>Contatos</title>
+    <title>Entre em contato - Pizzaria Bella Massa</title>
 </head>
 
 <body>
     <header>
-        <h1>Entre em Contato</h1>
+        <div class="header">
+            <div class="imagem-logo">
+                <img src="../ASSETS/IMG/Antigas/Logo da Pizzaria Bell Massa (2).png" alt="Logo da Pizzaria Bella Massa">
+                <h1>PIZZARIA BELLA MASSA</h1>
+            </div>
+            <br>
+            <nav>
+                <ul class="menu">
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="sobrenos.html">Sobre Nós</a></li>
+                    <li><a href="Cardapio.html">Cardápio</a></li>
+                    <li class="dropdown">
+                        <a href="#">Faça sua Pizza</a>
+                        <ul class="submenu">
+                            <li><a href="Faça.html">Salgada</a></li>
+                            <li><a href="faça_doce.html">Doce</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="pagamentos.html">Pagamento</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
         <br>
-        <nav>
-            <ul class="menu">
-                <li><a href="../index.html">Início</a></li>
-                <li><a href="sobrenos.html">Sobre Nós</a></li>
-                <li><a href="Cardapio.html">Cardápio</a></li>
-                <li class="dropdown">
-                    <a href="#">Faça sua Pizza</a>
-                    <ul class="submenu">
-                        <li><a href="Faça.html">Salgada</a></li>
-                        <li><a href="faça_doce.html">Doce</a></li>
-                    </ul>
-                </li>
-                <li><a href="pagamentos.html">Pagamento</a></li>  
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
-        <br>
-        <div>
-            <p>Se você tiver alguma duvida ou quiser falar conosco, use as opções abaixo:</p>
-
-            <ul>
-                <li><strong>Email:</strong> contato@seudominio.com</li>
-                <li><strong>Telefone:</strong> (11) 91234-5678</li>
-                <li><strong>Enderereço</strong> Rua das Flores, 123 - São Paulo, Sp</li>
-            </ul>
+        <div class="texto">
+            <p>WatsApp: (11) 99473-4324 - Rua 7 de setembro, 123 – Centro</p>
+            <h3>Para entrar em contato use as opções abaixo:</h3>
         </div>
     </header>
     <main>
@@ -50,7 +50,7 @@
         <h3>Email:</h3>
         <input type="email" id="email" name="email" placeholder="Digite seu email" required>
         <h3>Telefone:</h3>
-        <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
+        <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone (opcional)">
         <h3>Mensagem:</h3>
         <textarea id="mensagem" name="mensagem" rows="4" cols="50" placeholder="Digite sua mensagem"
             required></textarea>
@@ -60,6 +60,7 @@
     <footer>
         <p>&copy; 2025 Pizzaria Bella Massa. Todos os direitos reservados.</p>
     </footer>
+    <script src="../SCRIPT/script_contato.js"></script>
 </body>
 
 </html>

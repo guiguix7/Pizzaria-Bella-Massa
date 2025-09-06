@@ -1,67 +1,71 @@
-html {
-    height: 100%;
-    width: 100%;
-}
-
 body {
     margin: 0;
     padding: 0;
-    background-color: #FAF7F3;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #303030;
-    width: 100%;
+    background-color: #FFFDF0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    background-color: #8A0000;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .imagem-logo {
     display: flex;
     align-items: center;
-    gap: 400px;
+    gap: 15px;
 }
 
 .imagem-logo img {
-    height: 80px;
-    width: auto;
-    border-radius: 10px;
+    height: 60px;
+    border-radius: 8px;
 }
 
-.imagem-logo h1 {
+.imagem-logo h1,
+header h1 {
     font-size: 2.5em;
     margin: 0;
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     justify-content: center;
+    cursor: default;
 }
 
-header {
-    background-color: #8A0000;
-    color: white;
-    padding: 20px;
-    width: 100%;
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.2em;
-}
-
-nav ul {
+header ul {
     list-style-type: none;
     padding: 0;
     margin: 10px 0 0 0;
 }
 
-nav ul li {
+header ul li {
     display: inline;
     margin: 0 15px;
 }
 
-nav ul li a {
+header ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+}
+
+header ul li a:hover {
+    text-decoration: none;
+    background-color: #C83F12;
+    border-color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+nav ul li a {
     border: 2px solid transparent;
     padding: 5px 10px;
     border-radius: 5px;
@@ -69,14 +73,61 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    text-decoration: none;
     background-color: #C83F12;
     border-color: white;
 }
 
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu li a {
+    display: block;
+    padding: 12px 16px;
+}
+
+.dropdown>a {
+    position: relative;
+    padding-right: 24px;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #8A0000;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 200px;
+    border-radius: 0 0 8px 8px;
+}
+
+.submenu li a {
+    padding: 12px 16px;
+    color: white;
+    display: block;
+}
+
+.submenu li a:hover {
+    background-color: #C83F12;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
 main {
-    padding: 20px;
-    width: 100%;
+    padding: 15px 30px;
     background-color: #F0E4D3;
 }
 
@@ -98,13 +149,6 @@ h3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 16px;
-}
-
-.linha {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px 0;
 }
 
 .card {
@@ -130,6 +174,13 @@ h3 {
 
 .resumo-pedido li:last-child {
     border-bottom: none;
+}
+
+.linha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
 }
 
 .card label {
@@ -159,60 +210,13 @@ h3 {
     box-shadow: 0 0 0 3px rgba(138, 0, 0, 0.12);
 }
 
-button {
-    background-color: #8A0000;
-    color: white;
-    border: none;
-    padding: 10px 16px;
-    font-size: 1em;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform .02s;
-    text-align: center;
-}
-
-.btn-primario {
-    background-color: #8A0000;
-    color: white;
-    border: none;
-    padding: 10px 16px;
-    font-size: 1em;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform .02s;
-    text-align: center;
-    display: inline-block;
-    text-decoration: none;
-    margin: 0 8px 8px 0;
-}
-
-button:hover,
-.btn-primario:hover {
-    background-color: #C83F12;
-}
-
-footer {
-    background-color: #8A0000;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-    width: 100%;
-}
-
-footer p {
-    margin: 0;
-    font-size: 0.9em;
-}
-
-.pagamento-forma {
-    background: #fff5e6;
-    border-radius: 10px;
-    padding: 18px 22px 26px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, .08);
-    border: 1px solid #f0dcc6;
-    margin-top: 16px;
-    text-align: center;
+.botoes-pagamento {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 4px 0 10px;
+    padding: 0;
 }
 
 .forma-pagamento input[type="radio"] {
@@ -244,6 +248,16 @@ footer p {
     background: #C83F12;
     border-color: #C83F12;
     color: #fff;
+}
+
+.pagamento-forma {
+    background: #fff5e6;
+    border-radius: 10px;
+    padding: 18px 22px 26px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, .08);
+    border: 1px solid #f0dcc6;
+    margin-top: 16px;
+    text-align: center;
 }
 
 .sessao-pagamento {
@@ -284,17 +298,86 @@ footer p {
     box-shadow: 0 0 0 3px rgba(138, 0, 0, 0.12);
 }
 
-.botoes-pagamento {
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-    flex-wrap: wrap;
-    margin: 4px 0 10px;
-    padding: 0;
+.card-imagem {
+    background: #fff5e6;
+    border-radius: 10px;
+    padding: 18px 22px 26px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, .08);
+    border: 1px solid #f0dcc6;
 }
 
-main h3 {
+.imagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #8A0000;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+    align-self: center;
     text-align: center;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+button:hover,
+.btn-primario:hover {
+    background-color: #C83F12;
+}
+
+.btn-primario {
+    background-color: #8A0000;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    font-size: 1em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform .02s;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 8px 8px 0;
+}
+
+.submit-btn:hover {
+    background-color: #E63900;
+}
+
+.botao {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    margin: 30px auto 25px;
+    text-align: center;
+    padding: 15px 30px;
+}
+
+footer {
+    background-color: #8A0000;
+    color: white;
+    text-align: center;
+    padding: 15px 30px;
+    position: relative;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+    cursor: default;
 }
 
 .menu {
@@ -341,42 +424,42 @@ main h3 {
     display: block;
 }
 
-.card-imagem {
-    background: #fff5e6;
-    border-radius: 10px;
-    padding: 18px 22px 26px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, .08);
-    border: 1px solid #f0dcc6;
-}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
 
-.imagem {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    .imagem-logo h1 {
+        font-size: 1.8em;
+    }
 
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
+    .menu {
+        flex-direction: column;
+        gap: 5px;
+    }
 
-.btn-enviar {
-    background-color: #8A0000;
-    color: white;
-    border: none;
-    padding: 10px 16px;
-    font-size: 1em;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform .02s;
-    text-align: center;
-    display: block;
-    width: fit-content;
-    text-decoration: none;
-    margin: 16px auto;
-}
+    .menu li {
+        margin: 5px 0;
+    }
 
-.btn-enviar:hover {
-    background-color: #C83F12;
+    main {
+        padding: 10px;
+    }
+
+    .pagamento {
+        grid-template-columns: 1fr;
+    }
+
+    .botoes-pagamento {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        font-size: 0.8em;
+        padding: 10px;
+    }
 }

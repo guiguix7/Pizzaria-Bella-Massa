@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Gui">
+    <meta name="author" content="Gui, Caio">
     <meta name="keywords" content="Pizza, Personalize, Bella Massa">
     <meta name="description" content="Monte sua pizza personalizada na Pizzaria Bella Massa!">
     <link rel="icon" href="../ASSETS/IMG/Antigas/Logo da Pizzaria Bell Massa (2).png" type="image/x-icon">
@@ -15,16 +15,18 @@
 
 <body>
     <header>
-        <h1>Pizzaria Bella Massa</h1>
+        <div class="imagem-logo">
+            <img src="../ASSETS/IMG/Antigas/Logo da Pizzaria Bell Massa (2).png" alt="Logo da Pizzaria Bella Massa">
+            <h1>PIZZARIA BELLA MASSA</h1>
+        </div>
         <br>
-
         <nav>
             <ul class="menu">
                 <li><a href="../index.html">Início</a></li>
                 <li><a href="sobrenos.html">Sobre Nós</a></li>
                 <li><a href="Cardapio.html">Cardápio</a></li>
                 <li class="dropdown">
-                    <a href="#">Faça sua Pizza</a>
+                    <a href="#">Monte sua Pizza</a>
                     <ul class="submenu">
                         <li><a href="Faça.html">Salgada</a></li>
                         <li><a href="faça_doce.html">Doce</a></li>
@@ -38,88 +40,132 @@
     <main>
         <div class="pizza-customização">
             <div class="opções">
+                <h1>Meia ou Inteira</h1>
+                <div class="opção">
+                    <input type="radio" id="meia" name="tamanho" value="Meia">
+                    <label for="meia">Meia (2 Sabores)</label>
+                </div>
+                <div class="opção">
+                    <input type="radio" id="inteira" name="tamanho" value="Inteira">
+                    <label for="inteira">Inteira (1 Sabor)</label>
+                </div>
+            </div>
+        </div>
+    </main>
+    <main>
+        <div class="pizza-customização">
+            <div class="opções">
                 <h1>Escolha o Sabor:</h1>
                 <div class="opção">
-                    <input type="checkbox" id="recheio1" name="recheio" value="Calabresa">
-                    <label>
-                        <p>Chocolate</p>
+                    <input type="radio" id="recheio1" name="recheio" value="Calabresa">
+                    <label for="recheio1">
+                        <p> Chocolate</p>
+                        <p class="preco">+ R$ --,--</p>
                     </label>
                 </div>
                 <div class="opção">
-                    <input type="checkbox" id="recheio2" name="recheio" value="Margherita">
-                    <label>
-                        <p>Chocolate Branco</p>
+                    <input type="radio" id="recheio2" name="recheio" value="Margherita">
+                    <label for="recheio2">
+                        <p> Chocolate Branco</p>
+                        <p class="preco">+ R$ --,--</p>
                     </label>
                 </div>
                 <div class="opção">
-                    <input type="checkbox" id="recheio3" name="recheio" value="Pepperoni">
-                    <label>
-                        <p>Doce de leite</p>
+                    <input type="radio" id="recheio3" name="recheio" value="Pepperoni">
+                    <label for="recheio3">
+                        <p> Doce de leite</p>
+                        <p class="preco">+ R$ --,--</p>
                     </label>
                 </div>
                 <div class="opção">
-                    <input type="checkbox" id="recheio4" name="recheio" value="Frango com Catupiry">
-                    <label>
-                        <p>Nutella</p>
+                    <input type="radio" id="recheio4" name="recheio" value="Frango com Catupiry">
+                    <label for="recheio4">
+                        <p> Nutella</p>
+                        <p class="preco">+ R$ --,--</p>
                     </label>
                 </div>
                 <div class="opção">
-                    <input type="checkbox" id="recheio5" name="recheio" value="Vegetariana">
-                    <label>
-                        <p>Beijinho</p>
+                    <input type="radio" id="recheio5" name="recheio" value="Vegetariana">
+                    <label for="recheio5">
+                        <p> Beijinho</p>
+                        <p class="preco">+ R$ --,--</p>
                     </label>
                 </div>
             </div>
-
+        </div>
+    </main>
+    <main>
+        <div class="pizza-customização">
             <div class="opções">
                 <h1>Escolha o Tipo de Borda:</h1>
                 <div class="opção">
-                    <input type="checkbox" id="borda1" name="borda" value="Borda Recheada com Calabresa">
-                    <label for="borda1">Borda Recheada com Chocolate </p></label>
+                    <input type="radio" id="borda1" name="borda" value="Borda Recheada com Calabresa">
+                    <label for="borda1">
+                        <p> Borda Recheada com Chocolate </p>
+                        <p class="preco">+ R$ --,--</p>
+                    </label>
                 </div>
                 <div class="opção">
-                    <input type="checkbox" id="borda2" name="borda" value="Borda Recheada com Catupiry">
-                    <label for="borda2">Borda Recheada com Chocolate Branco</p></label>
+                    <input type="radio" id="borda2" name="borda" value="Borda Recheada com Catupiry">
+                    <label for="borda2">
+                        <p> Borda Recheada com Chocolate Branco</p>
+                        <p class="preco">+ R$ --,--</p>
+                    </label>
                 </div>
                 <div class="opção">
-                    <input type="checkbox" id="borda3" name="borda" value="Borda Recheada com Cheddar">
-                    <label for="borda3">Borda Recheada com Nutella</p></label>
+                    <input type="radio" id="borda3" name="borda" value="Borda Recheada com Cheddar">
+                    <label for="borda3">
+                        <p> Borda Recheada com Nutella</p>
+                        <p class="preco">+ R$ --,--</p>
+                    </label>
                 </div>
                 <div class="opção">
-                    <input type="checkbox" id="borda1" name="borda" value="Borda Recheada com Mussarela">
-                    <label for="borda1">Borda Recheada com Beijinho</p></label>
+                    <input type="radio" id="borda1" name="borda" value="Borda Recheada com Mussarela">
+                    <label for="borda4">
+                        <p> Borda Recheada com Beijinho</p>
+                        <p class="preco">+ R$ --,--</p>
+                    </label>
                 </div>
             </div>
-
+        </div>
+    </main>
+    <main>
+        <div class="pizza-customização">
             <div class="opções">
                 <h1>Escolha o Adicional:</h1>
                 <div class="opção">
                     <input type="checkbox" id="proteina1" name="proteina" value="Frango">
-                    <label for="proteina1">Morango</p></label>
+                    <label for="proteina1">
+                        <p> Morango</p>
+                        <p class="preco">+ R$ --,--</p>
+                    </label>
                 </div>
                 <div class="opção">
                     <input type="checkbox" id="proteina2" name="proteina" value="Calabresa">
-                    <label for="proteina2">Granulado</p></label>
+                    <label for="proteina2">
+                        <p> Granulado</p>
+                        <p class="preco">+ R$ --,--</p>
+                    </label>
                 </div>
                 <div class="opção">
                     <input type="checkbox" id="proteina3" name="proteina" value="Pepperoni">
-                    <label for="proteina3">Coco ralado</p></label>
+                    <label for="proteina3">
+                        <p> Coco ralado</p>
+                        <p class="preco">+ R$ --,--</p>
+                    </label>
                 </div>
             </div>
-            <div class="botao">
-                <button>Concluir</button>
-            </div>
-            <div class="pizza-summary" id="resumo" style="display: none;">
-                <h3>Resumo da sua Pizza:</h3>
-                <div id="ingredientes-selecionados"></div>
-            </div>
+        </div>
+        <div class="botao">
+            <button>Concluir - Total R$ --,--</button>
         </div>
     </main>
 
     <footer>
-        <p>&copy; 2025 Pizzaria Bell Massa. Todos os direitos reservados.</p>
+        <p>&copy; 2025 Pizzaria Bella Massa. Todos os direitos reservados.</p>
     </footer>
 
 </body>
+<script src="../SCRIPT/script_doce.js"></script>
 
 </html>
