@@ -53,7 +53,7 @@ README.md          -> Informações do Projeto
 
 | Membros | Contribuições Principais |
 |--------|---------------------------|
-| Gui | Estrutura base do projeto, HTML, CSS,  likação do projeto, layout |
+| Gui | Estrutura base do projeto, HTML, CSS,  linkação do projeto, layout |
 | Caio | Páginas (Faça / Doce / Cardapio), imagens e CSS |
 | Victor | Cardápio, imagens e apoio no CSS |
 | Davi | Apoio na página de pagamentos (estrutura do fluxo), imagens, CSS |
