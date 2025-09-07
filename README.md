@@ -36,7 +36,7 @@ Feito a partir de um trabalho escolar o objetivo principal é oferecer uma inter
 
 ---
 
-## 📂 Estrutura de Pastas (resumo)
+## Estrutura de Pastas (resumo)
 ```
 ASSETS/IMG/        -> Imagens organizadas por tipo
 ASSETS/VIDEO/      -> (reservado para mídia futura)
@@ -76,10 +76,9 @@ README.md          -> Informações do Projeto
 ---
 
 ## Como Executar
-1. Clone ou copie a pasta do projeto.
-2. Abra o arquivo `index.html` no navegador (duplo clique ou via servidor local).
-3. Opcional: usar extensão Live Server no VS Code para auto-reload.
-4. Certifique-se de manter a estrutura de pastas (CSS/ HTML/ SCRIPT/ ASSETS/).
+1. Abra a pasta do projeto.
+2. Abra o arquivo `index.html` no navegador.
+3. Certifique-se de manter a estrutura de pastas (CSS/ HTML/ SCRIPT/ ASSETS/).
 
 ---
 
@@ -97,6 +96,7 @@ Sinta-se à vontade para sugerir melhorias ou abrir contribuições.
 Feito em 2025 no 1º Ano Técnico em Desenvolvimento de Sistemas, Etec, Matéria: Programação Web
 
 *Autores*
+
 - Guilherme Pereira Andraz
 - Caio Candiani Régio
 - Davi Gato Grijó da Silva
