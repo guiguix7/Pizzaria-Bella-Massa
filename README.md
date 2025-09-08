@@ -1,9 +1,9 @@
 # Pizzaria Bella Massa 
 
 Bem-vindo ao repositório do site da **Pizzaria Bella Massa**!  
-Este projeto apresenta um site estático responsivo que permite ao usuário:
+Este é um projeto que apresenta um site de venda de pizza que permite ao usuário:
 - Navegar pelo cardápio (tradicional, doce e bebidas)
-- Personalizar sua própria pizza (salgada e doce)
+- Montar sua própria pizza (salgada e doce)
 - Finalizar pedido (fluxo de resumo + dados + forma de pagamento)
 - Entrar em contato (formulário)
 - Conhecer mais sobre a pizzaria (página “Sobre Nós”)
@@ -18,7 +18,7 @@ Feito a partir de um trabalho escolar o objetivo principal é oferecer uma inter
 ## Funcionalidades Principais
 - Página inicial com navegação centralizada
 - Cardápio separado por categorias
-- Montagem de pizza (salgada e doce) com etapas
+- Customização de pizzas (Salgadas / Doces)
 - Página de pagamento estruturada (resumo + dados + forma de retirada + forma de pagamento)
 - Página de contato com formulário
 - Design responsivo (mobile / desktop)
@@ -30,8 +30,8 @@ Feito a partir de um trabalho escolar o objetivo principal é oferecer uma inter
 | Camada | Tecnologias |
 |--------|-------------|
 | Estrutura | HTML |
-| Estilo | CSS (layout responsivo, componentes reutilizáveis) |
-| Interatividade | JavaScript(não utilizado) (DOM, formulários, lógica de seleção) |
+| Estilo | CSS |
+| Interatividade | JavaScript (não utilizado), (DOM, formulários, lógica de seleção) |
 | Mídia | Imagens otimizadas (PNG / JPG) |
 
 ---
@@ -44,21 +44,20 @@ CSS/               -> Arquivos de estilo (por página e global)
 HTML/              -> Páginas do site
 SCRIPT/            -> Lógica JS específica de cada página
 index.html         -> Página inicial
-README.md          -> Informações do Projeto
 ```
 
 ---
 
-## Equipe
+## Equipe e Contribuições
 
 | Membros | Contribuições Principais |
 |--------|---------------------------|
-| Gui | Estrutura base do projeto, HTML, CSS,  linkação do projeto, layout |
+| Gui | Estrutura base do projeto, HTML, CSS, linkação do projeto, layout |
 | Caio | Páginas (Faça / Doce / Cardapio), imagens e CSS |
 | Victor | Cardápio, imagens e apoio no CSS |
 | Davi | Apoio na página de pagamentos (estrutura do fluxo), imagens, CSS |
 | Pedro | Página de contato, sobre nós |
-| Enzo | Página de contato, read me |
+| Enzo | Página de contato, Read me |
 
 ---
 
