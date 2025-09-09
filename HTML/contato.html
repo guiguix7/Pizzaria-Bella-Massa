@@ -15,50 +15,53 @@
 
 <body>
     <header>
-        <div class="header">
-            <div class="imagem-logo">
-                <img src="../ASSETS/IMG/Antigas/Logo da Pizzaria Bell Massa (2).png" alt="Logo da Pizzaria Bella Massa">
-                <h1>PIZZARIA BELLA MASSA</h1>
-            </div>
-            <br>
-            <nav>
-                <ul class="menu">
-                    <li><a href="../index.html">Início</a></li>
-                    <li><a href="sobrenos.html">Sobre Nós</a></li>
-                    <li><a href="Cardapio.html">Cardápio</a></li>
-                    <li class="dropdown">
-                        <a href="#">Monte sua Pizza</a>
-                        <ul class="submenu">
-                            <li><a href="Faça.html">Salgada</a></li>
-                            <li><a href="faça_doce.html">Doce</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="pagamentos.html">Pagamento</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
-            </nav>
+        <div class="imagem-logo">
+            <img src="../ASSETS/IMG/Antigas/Logo da Pizzaria Bell Massa (2).png" alt="Logo da Pizzaria Bella Massa">
+            <h1>PIZZARIA BELLA MASSA</h1>
         </div>
         <br>
-        <div class="texto">
-            <p>WatsApp: (11) 99473-4324 - Rua 7 de setembro, 123 – Centro</p>
-            <h3>Para entrar em contato use as opções abaixo:</h3>
-        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="sobrenos.html">Sobre Nós</a></li>
+                <li><a href="Cardapio.html">Cardápio</a></li>
+                <li class="dropdown">
+                    <a href="#">Monte sua Pizza</a>
+                    <ul class="submenu">
+                        <li><a href="Faça.html">Salgada</a></li>
+                        <li><a href="faça_doce.html">Doce</a></li>
+                    </ul>
+                </li>
+                <li><a href="pagamentos.html">Pagamento</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <h3>Nome:</h3>
-        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
-        <h3>Email:</h3>
-        <input type="email" id="email" name="email" placeholder="Digite seu email" required>
-        <h3>Telefone:</h3>
-        <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone (opcional)">
-        <h3>Mensagem:</h3>
-        <textarea id="mensagem" name="mensagem" rows="4" cols="50" placeholder="Digite sua mensagem"
-            required></textarea>
+        <div class="formulario">
+            <section class="card">
+                <div class="texto">
+                    <h3>Para entrar em contato use as opções abaixo:</h3>
+                </div>
+                <h3>Nome:</h3>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                <h3>Email:</h3>
+                <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                <h3>Telefone:</h3>
+                <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone (opcional)">
+                <h3>Mensagem:</h3>
+                <textarea id="mensagem" name="mensagem" rows="4" cols="50" placeholder="Digite sua mensagem"
+                    required></textarea>
+            </section>
+        </div>
         <br>
         <button type="submit">Enviar</button>
     </main>
     <footer>
-        <p>&copy; 2025 Pizzaria Bella Massa. Todos os direitos reservados.</p>
+        <p>&copy; 2025 Pizzaria Bella Massa. Todos os direitos reservados. </p>
+        <p> WatsApp: (11) 93415-4282 - Rua 7 de setembro, 123 – Centro </p>
+        <a
+            href="https://www.instagram.com/pizzaria.bella.massa_itu/?utm_source=qr&igsh=ajAxMThmYmg5Y3k3#">Instagram</a>
     </footer>
     <script src="../SCRIPT/script_contato.js"></script>
 </body>
