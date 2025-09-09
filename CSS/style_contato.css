@@ -2,11 +2,13 @@ body {
     margin: 0;
     padding: 0;
     background-color: #FFFDF0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 header {
     background-color: #8A0000;
     color: white;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
@@ -14,12 +16,6 @@ header {
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-}
-
-.header {
-    display: flex;
-    align-items: center;
-    text-align: left;
 }
 
 .imagem-logo {
@@ -33,18 +29,14 @@ header {
     border-radius: 8px;
 }
 
-.imagem-logo h1 {
+.imagem-logo h1,
+header h1 {
     font-size: 2.5em;
     margin: 0;
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     justify-content: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
     cursor: default;
 }
 
@@ -63,6 +55,26 @@ header ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+}
+
+header ul li a:hover {
+    text-decoration: none;
+    background-color: #C83F12;
+    border-color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+nav ul li a {
+    border: 2px solid transparent;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #C83F12;
+    border-color: white;
 }
 
 .menu {
@@ -131,6 +143,15 @@ nav ul li a:hover {
     text-justify: inter-word;
 }
 
+.texto p {
+    margin: 0;
+    padding: 0;
+}
+
+.texto h3 {
+    cursor: default;
+}
+
 main {
     padding: 15px 30px;
     background-color: #F0E4D3;
@@ -144,9 +165,9 @@ main h3 {
 
 main input,
 main textarea {
-    width: 100%;
+    width: 99%;
     padding: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     border: 1px solid #CCC;
     border-radius: 5px;
     font-size: 1em;
@@ -179,13 +200,40 @@ footer {
     text-align: center;
     padding: 15px 30px;
     position: relative;
-    bottom: 0;
-    cursor: default;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 8px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    border: #C83F12;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    background-color: #FF4500;
 }
 
 footer p {
     margin: 0;
     font-size: 0.9em;
+}
+
+.card {
+    background: #fff5e6;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .08);
 }
 
 @media (max-width: 768px) {
@@ -226,5 +274,6 @@ footer p {
     footer {
         font-size: 0.8em;
         padding: 10px 30px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
 }
