@@ -177,11 +177,13 @@ main h2 {
     margin: 0 0 8px 0;
     color: #8B4513;
     font-size: 1.1rem;
+    cursor: default;
 }
 
 .categoria ul li p {
     margin: 6px 0;
     color: #555555;
+    cursor: default;
 }
 
 .categoria ul li p:last-child {
@@ -247,29 +249,35 @@ main h2 {
     font-weight: 400;
 }
 
+.categoria ul li {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    padding: 16px 18px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    color: #333333;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
 .categoria ul li .preview {
     width: 100%;
+    max-width: 100%;
+    height: 170px;
     margin-top: 12px;
     border-radius: 10px;
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
-    opacity: 0;
-    max-height: 0;
-    transform: translateY(6px);
-    transition: opacity .2s ease, max-height .25s ease, transform .2s ease;
     display: block;
-    pointer-events: none;
     object-fit: cover;
+    align-self: center;
 }
 
 .categoria ul li:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
-}
-
-.categoria ul li:hover .preview {
-    opacity: 1;
-    max-height: 220px;
-    transform: translateY(0);
 }
 
 button {
@@ -305,6 +313,7 @@ footer {
     padding: 15px 30px;
     position: relative;
     bottom: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 footer p {
