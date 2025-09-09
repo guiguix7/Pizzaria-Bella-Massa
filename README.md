@@ -117,5 +117,6 @@ Feito em 2025 no 1º Ano Técnico em Desenvolvimento de Sistemas, Etec, Matéria
 | Canva | Site | Criação de imagens manual |
 | Chat GPT | IA | Criação de imagens com IA |
 | FreePik | Site | Fonte de Imagens |
+| Inkscaoe | Programa | Vetorização de imagens |
 
 ---
