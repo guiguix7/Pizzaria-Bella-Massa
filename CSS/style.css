@@ -127,7 +127,7 @@ nav ul li a:hover {
 }
 
 main {
-    padding: 15px 30px;
+    padding: 10px 30px;
     background-color: #FBF5DE;
 }
 
@@ -144,11 +144,11 @@ p {
 
 .carrossel {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1500px;
     max-height: 1000px;
     height: auto;
     overflow: hidden;
-    margin: 30px auto;
+    margin: 0px auto;
     border-radius: 15px;
     position: relative;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -160,19 +160,19 @@ p {
     display: block;
 }
 
-.slides {
-    width: 300%;
-    display: flex;
-    height: 100%;
-}
-
 .slides input {
     display: none;
 }
 
+.slides {
+    width: 600%;
+    display: flex;
+    height: 100%;
+}
+
 .slide {
-    flex: 0 0 calc(100% / 3);
-    width: calc(100% / 3);
+    flex: 0 0 calc(100% / 6);
+    width: calc(100% / 6);
     transition: 0.6s ease;
 }
 
@@ -187,11 +187,23 @@ p {
 }
 
 #slide2:checked~.first {
-    margin-left: -33.3333%;
+    margin-left: -16.6667%;
 }
 
 #slide3:checked~.first {
+    margin-left: -33.3333%;
+}
+
+#slide4:checked~.first {
+    margin-left: -50%;
+}
+
+#slide5:checked~.first {
     margin-left: -66.6667%;
+}
+
+#slide6:checked~.first {
+    margin-left: -83.3333%;
 }
 
 .navigation-manual {
@@ -302,6 +314,28 @@ footer {
     text-align: center;
     padding: 15px 30px;
     position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 8px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    border: #C83F12;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    background-color: #FF4500;
 }
 
 footer p {
