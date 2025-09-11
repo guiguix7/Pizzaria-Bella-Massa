@@ -1,7 +1,7 @@
 # Pizzaria Bella Massa 
 
 Bem-vindo ao repositório do site da **Pizzaria Bella Massa**!  
-Este é um projeto que apresenta um site de venda de pizza que permite ao usuário:
+Este nosso projeto apresenta um site de venda de pizza, que permite ao usuário:
 - Navegar pelo cardápio (tradicional, doce e bebidas)
 - Customizar sua própria pizza (salgada e doce)
 - Finalizar pedido (fluxo de resumo + dados + forma de pagamento)
@@ -31,7 +31,7 @@ Feito a partir de um trabalho escolar o objetivo principal é oferecer uma inter
 |--------|-------------|
 | Estrutura | HTML |
 | Estilo | CSS |
-| Interatividade | JavaScript (não utilizado), (DOM, formulários, lógica de seleção) |
+| Interatividade | JavaScript (não utilizado) |
 | Mídia | Imagens otimizadas (PNG / JPG) |
 
 ---
@@ -113,10 +113,10 @@ Feito em 2025 no 1º Ano Técnico em Desenvolvimento de Sistemas, Etec, Matéria
 
 | Nome | Tipo | Ultilidade |
 |------|------|------------|
-| GitHub Copilot | Extensão VS Code | Correção de erros |
+| GitHub Copilot | Extensão VS Code | Correção de erros / Revisão do código |
 | Canva | Site | Criação de imagens manual |
-| Chat GPT | IA | Criação de imagens com IA |
+| Chat GPT | IA | Criação de imagens com IA / Fonte de ideias |
 | FreePik | Site | Fonte de Imagens |
-| Inkscaoe | Programa | Vetorização de imagens |
+| Inkscaoe | Software | Vetorização de imagens |
 
 ---
