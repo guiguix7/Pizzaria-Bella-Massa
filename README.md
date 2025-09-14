@@ -106,7 +106,7 @@ Projeto (2025) — 1º Ano Técnico em Desenvolvimento de Sistemas, Etec (Progra
 
 *Autores*
 
-- Guilherme Pereira Andraz (@guiguix7)
+- Guilherme Pereira Andraz - [@guiguix7](https://github.com/guiguix7)
 - Caio Candiani Régio
 - Davi Gato Grijó da Silva
 - Victor Hugo Volpi Pereira
