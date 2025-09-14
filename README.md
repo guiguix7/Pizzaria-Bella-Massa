@@ -123,6 +123,6 @@ Projeto (2025) — 1º Ano Técnico em Desenvolvimento de Sistemas, Etec (Progra
 | Canva | Site | Criação de imagens manual |
 | Chat GPT | IA | Criação de imagens com IA / Fonte de ideias |
 | FreePik | Site | Fonte de Imagens |
-| Inkscaoe | Software | Vetorização de imagens |
+| Inkscape | Software | Vetorização de imagens |
 
 ---
