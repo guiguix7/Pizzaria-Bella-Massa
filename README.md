@@ -10,12 +10,26 @@ Este nosso projeto apresenta um site de venda de pizza, que permite ao usuário:
 
 ---
 
+## Como Executar (Opção 1)
+
+1. Abra o Site do Projeto: https://guiguix7.github.io/Pizzaria-Bella-Massa/
+
+---
+
+## Como Executar (Opção 2)
+
+1. Baixe a pasta do projeto
+2. Abra o arquivo `index.html` no navegador.
+3. Certifique-se de manter a estrutura de pastas (CSS/ HTML/ SCRIPT/ ASSETS/).
+
+---
+
 ## Objetivo
 Feito a partir de um trabalho escolar o objetivo principal é oferecer uma interface simples, clara e atrativa para facilitar a experiência do cliente na escolha e personalização das pizzas antes de concluir o pedido.
 
 ---
 
-## Funcionalidades Principais
+## Funcionalidades
 - Página inicial com navegação centralizada
 - Cardápio separado por categorias
 - Customização de pizzas (Salgadas / Doces)
@@ -75,14 +89,6 @@ index.html         -> Página inicial |
 
 ---
 
-## Como Executar
-
-1. Abra a pasta do projeto.
-2. Abra o arquivo `index.html` no navegador.
-3. Certifique-se de manter a estrutura de pastas (CSS/ HTML/ SCRIPT/ ASSETS/).
-
----
-
 ## Contato
 
 - Email: pizzariabellamassa@gmail.com  
@@ -96,11 +102,11 @@ Sinta-se à vontade para sugerir melhorias ou abrir contribuições.
 
 ## Projeto
 
-Feito em 2025 no 1º Ano Técnico em Desenvolvimento de Sistemas, Etec, Matéria: Programação Web
+Projeto (2025) — 1º Ano Técnico em Desenvolvimento de Sistemas, Etec (Programação Web)
 
 *Autores*
 
-- Guilherme Pereira Andraz
+- Guilherme Pereira Andraz (@guiguix7)
 - Caio Candiani Régio
 - Davi Gato Grijó da Silva
 - Victor Hugo Volpi Pereira
