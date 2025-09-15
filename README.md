@@ -110,7 +110,7 @@ Projeto (2025) — 1º Ano Técnico em Desenvolvimento de Sistemas, Etec (Progra
 - Caio Candiani Régio
 - Davi Gato Grijó da Silva
 - Victor Hugo Volpi Pereira
-- Pedro Ailton dos Santos Cavalieri
+- Pedro Ailton dos Santos Cavalieri - [@pailton](https://github.com/pailton)
 - Enzo Miguel Bertoluci Ovidio
 
 ---
