@@ -30,7 +30,7 @@ header {
 }
 
 .imagem-logo h1 {
-    font-size: 2.5em;
+    font-size: 2.3em;
     margin: 0;
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -126,13 +126,14 @@ nav ul li a:hover {
 main {
     padding: 15px 30px;
     background-color: #F0E4D3;
-    font-family: Epunda Slab, serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 main h2,
 main h3 {
     color: #ff0000;
     margin-bottom: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 main p {
@@ -218,6 +219,7 @@ footer {
     position: relative;
     text-align: center;
     display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 footer .texto-footer {
@@ -266,56 +268,156 @@ footer nav ul li {
     margin: 0;
 }
 
-@media (min-width: 900px) {
-    main .texto {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    main .texto section:first-child {
-        grid-column: 1 / -1;
-    }
-}
-
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 10px;
+        padding: 8px 12px;
     }
 
-    .imagem-logo h1 {
-        font-size: 1.8em;
+    .imagem-logo img {
+        height: 48px;
+    }
+
+    .imagem-logo h1,
+    header h1 {
+        font-size: 1.4em;
     }
 
     .menu {
-        flex-direction: column;
-        gap: 5px;
+        width: 100%;
     }
 
-    .menu li {
-        margin: 5px 0;
+    .menu li a {
+        padding: 14px 12px;
+        min-height: 44px;
+    }
+
+    .submenu {
+        position: static;
+        background-color: transparent;
+        padding: 0;
+        border-radius: 8px;
+        min-width: 0;
+    }
+
+    .submenu li a {
+        padding-left: 24px;
+        background-color: #8A0000;
+        margin-top: 4px;
+        border-radius: 6px;
+    }
+
+    .dropdown:hover .submenu {
+        display: none;
+    }
+
+    .dropdown:focus-within .submenu,
+    .dropdown>a:focus+.submenu {
+        display: block;
     }
 
     main {
-        padding: 10px;
+        padding: 12px;
     }
 
     main .texto {
-        grid-template-columns: 1fr;
-        padding: 0 10px;
+        gap: 14px;
+    }
+
+    main .texto section {
+        padding: 14px;
+    }
+
+    main .texto section h2,
+    main .texto section h3 {
+        font-size: 1.1em;
+    }
+
+    main .texto section p,
+    main .texto section li {
+        font-size: 1em;
     }
 
     footer {
-        font-size: 0.8em;
-        padding: 10px;
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
+        padding: 12px;
+    }
+}
+
+@media (min-width: 1600px) {
+
+    body {
+        padding: 3% 4%;
     }
 
-    footer .texto-footer {
-        flex-direction: column;
-        gap: 10px;
+    header {
+        padding: 28px 56px;
+        border-radius: 16px;
+    }
+
+    .imagem-logo img {
+        height: 96px;
+    }
+
+    .imagem-logo h1,
+    header h1 {
+        font-size: 3rem;
+    }
+
+    .menu li a {
+        padding: 18px 26px;
+        font-size: 1.25rem;
+    }
+
+    .submenu {
+        min-width: 260px;
+    }
+
+    main {
+        padding: 56px 64px;
+        border-radius: 16px;
+    }
+
+    main .texto {
+        max-width: 1600px;
+        gap: 28px;
+    }
+
+    main .texto section {
+        padding: 28px 32px;
+    }
+
+    main .texto section h2,
+    main .texto section h3 {
+        font-size: 2rem;
+    }
+
+    main .texto section p,
+    main .texto section li {
+        font-size: 1.25rem;
+    }
+
+    footer {
+        padding: 28px 56px;
+        border-radius: 16px;
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 2560px) {
+    body {
+        padding: 4% 6%;
+    }
+
+    .imagem-logo h1,
+    header h1 {
+        font-size: 3.4rem;
+    }
+
+    .menu li a {
+        font-size: 1.35rem;
+        padding: 22px 30px;
+    }
+
+    main .texto {
+        max-width: 2000px;
     }
 }
