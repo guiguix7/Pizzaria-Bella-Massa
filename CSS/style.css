@@ -52,25 +52,14 @@ header ul li {
     margin: 0 15px;
 }
 
-header ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-header ul li a:hover {
-    text-decoration: none;
-    background-color: #C83F12;
-    border-color: white;
-    border: 2px solid white;
-    border-radius: 5px;
-}
-
 nav ul li a {
     border: 2px solid transparent;
     padding: 5px 10px;
     border-radius: 5px;
     transition: all 0.3s ease;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 nav ul li a:hover {
@@ -84,6 +73,7 @@ nav ul li a:hover {
     margin: 0;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .menu li {
@@ -141,11 +131,6 @@ main {
     background-color: #FBF5DE;
 }
 
-h2 {
-    color: #FF4500;
-    font-size: 2em;
-    margin-bottom: 10px;
-}
 
 p {
     color: #FF8C00;
@@ -154,7 +139,7 @@ p {
 
 .carrossel {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1100px;
     max-height: 1500px;
     height: auto;
     overflow: hidden;
@@ -214,6 +199,10 @@ p {
 
 #slide6:checked~.first {
     margin-left: -83.3333%;
+}
+
+#slide7:checked~.first {
+    margin-left: -100%;
 }
 
 .navigation-manual {
@@ -284,6 +273,7 @@ p {
     font-size: 1.1rem;
 }
 
+
 .categoria ul li p {
     margin: 6px 0;
     color: #555555;
@@ -341,8 +331,12 @@ footer p {
     text-align: center;
 }
 
+footer img {
+    height: 24px;
+}
+
 .instagram {
-    background: transparent;
+    background: #FBF5DE;
     border: 2px solid #fff;
     color: #fff;
     padding: 8px 14px;
@@ -353,7 +347,7 @@ footer p {
 }
 
 .fale-conosco {
-    background: transparent;
+    background: #FBF5DE;
     border: 2px solid #fff;
     color: #fff;
     padding: 8px 14px;
@@ -365,243 +359,6 @@ footer p {
 
 .instagram:hover,
 .fale-conosco:hover {
-    background: #C83F12;
     outline: none;
     transform: translateY(-1px);
-}
-
-@media (max-width: 600px) {
-    body {
-        font-size: 16px;
-        line-height: 1.3;
-    }
-
-    header {
-        flex-direction: column;
-        align-items: stretch;
-        padding: 10px 16px;
-    }
-
-    .imagem-logo {
-        justify-content: center;
-        gap: 10px;
-    }
-
-    .imagem-logo img {
-        height: 44px;
-    }
-
-    .imagem-logo h1,
-    header h1 {
-        font-size: 1.4em;
-        text-align: center;
-    }
-
-    nav {
-        width: 100%;
-    }
-
-    .menu {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 4px;
-    }
-
-    .menu li {
-        display: block;
-    }
-
-    .menu li a {
-        padding: 10px 12px;
-    }
-
-    .submenu {
-        position: static;
-        opacity: 1;
-        visibility: visible;
-        transform: none;
-        background-color: transparent;
-        border-radius: 0;
-        padding-left: 12px;
-        pointer-events: auto;
-    }
-
-    .submenu li a {
-        padding: 8px 12px;
-    }
-
-    main {
-        padding: 12px 16px;
-    }
-
-    h2 {
-        font-size: 1.5em;
-    }
-
-    p {
-        font-size: 1em;
-    }
-
-    .carrossel {
-        max-width: 100%;
-        border-radius: 10px;
-        aspect-ratio: 16 / 9;
-        height: auto;
-    }
-
-    .slides {
-        height: 100%;
-    }
-
-    .slide img {
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .navigation-manual {
-        bottom: 8px;
-        gap: 8px;
-    }
-
-    .manual-btn {
-        width: 10px;
-        height: 10px;
-    }
-
-    .cardapio {
-        padding: 0;
-        max-width: 100%;
-    }
-
-    .categoria {
-        margin-bottom: 20px;
-    }
-
-    .categoria h3 {
-        font-size: 1.2rem;
-    }
-
-    .categoria ul {
-        grid-template-columns: 1fr;
-        gap: 14px;
-    }
-
-    .categoria ul li {
-        padding: 14px;
-    }
-
-    .categoria ul li .preview {
-        max-height: 180px;
-    }
-
-    footer {
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-        align-items: stretch;
-    }
-
-    footer p {
-        font-size: 0.95em;
-    }
-
-    .instagram,
-    .fale-conosco {
-        width: 100%;
-        text-align: center;
-    }
-}
-
-@media (min-width: 601px) and (max-width: 900px) {
-    .menu {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 8px;
-    }
-
-    .menu li a {
-        padding: 10px 14px;
-    }
-
-    .carrossel {
-        max-width: 95%;
-        aspect-ratio: 16 / 9;
-    }
-
-    .cardapio {
-        max-width: 95%;
-    }
-
-    .categoria ul {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (min-width: 1600px) {
-    body {
-        font-size: 22px;
-        line-height: 1.4;
-    }
-
-    header {
-        padding: 24px 60px;
-    }
-
-    .imagem-logo img {
-        height: 90px;
-    }
-
-    .imagem-logo h1,
-    header h1 {
-        font-size: 3em;
-    }
-
-    .menu li a {
-        padding: 16px 22px;
-        font-size: 1.1em;
-    }
-
-    .carrossel {
-        max-width: 80vw;
-        aspect-ratio: 21 / 9;
-    }
-
-    .manual-btn {
-        width: 16px;
-        height: 16px;
-        border-width: 3px;
-    }
-
-    .cardapio {
-        max-width: 80vw;
-    }
-
-    .categoria h3 {
-        font-size: 2em;
-    }
-
-    .categoria ul {
-        grid-template-columns: repeat(4, 1fr);
-        gap: 28px;
-    }
-
-    .categoria ul li {
-        padding: 22px;
-    }
-
-    footer {
-        padding: 32px 60px;
-        font-size: 1.1em;
-    }
-}
-
-@media (min-width: 2560px) {
-    body {
-        font-size: 26px;
-    }
-
-    .carrossel,
-    .cardapio {
-        max-width: 70vw;
-    }
 }
