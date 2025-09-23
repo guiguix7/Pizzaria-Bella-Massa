@@ -3,6 +3,7 @@ body {
     padding: 0;
     background-color: #FFFDF0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.06;
 }
 
 header {
@@ -31,7 +32,7 @@ header {
 
 .imagem-logo h1,
 header h1 {
-    font-size: 2.5em;
+    font-size: 2.3em;
     margin: 0;
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -51,25 +52,14 @@ header ul li {
     margin: 0 15px;
 }
 
-header ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-header ul li a:hover {
-    text-decoration: none;
-    background-color: #C83F12;
-    border-color: white;
-    border: 2px solid white;
-    border-radius: 5px;
-}
-
 nav ul li a {
     border: 2px solid transparent;
     padding: 5px 10px;
     border-radius: 5px;
     transition: all 0.3s ease;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 nav ul li a:hover {
@@ -83,6 +73,7 @@ nav ul li a:hover {
     margin: 0;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .menu li {
@@ -94,25 +85,13 @@ nav ul li a:hover {
     padding: 12px 16px;
 }
 
-nav ul li a {
-    border: 2px solid transparent;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-}
-
-nav ul li a:hover {
-    background-color: #C83F12;
-    border-color: white;
-}
-
 .dropdown>a {
     position: relative;
     padding-right: 24px;
 }
 
 .submenu {
-    display: none;
+    display: block;
     position: absolute;
     top: 100%;
     left: 0;
@@ -122,6 +101,12 @@ nav ul li a:hover {
     margin: 0;
     min-width: 200px;
     border-radius: 0 0 8px 8px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    pointer-events: none;
+    transition: opacity .22s ease, transform .22s ease, visibility .22s ease;
+    z-index: 1000;
 }
 
 .submenu li a {
@@ -135,7 +120,10 @@ nav ul li a:hover {
 }
 
 .dropdown:hover .submenu {
-    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: auto;
 }
 
 .texto {
@@ -196,37 +184,57 @@ main button:hover {
 
 footer {
     background-color: #8A0000;
-    color: white;
-    text-align: center;
-    padding: 15px 30px;
+    color: #fff;
+    padding: 24px 30px;
     position: relative;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
-    text-align: center;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
 footer a {
-    color: white;
+    color: inherit;
     text-decoration: none;
-    font-weight: bold;
-    margin: 0 8px;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-    border: 2px solid transparent;
-    border: #C83F12;
-}
-
-footer a:hover {
-    text-decoration: underline;
-    background-color: #FF4500;
 }
 
 footer p {
-    margin: 0;
+    margin: 8px 0;
     font-size: 0.9em;
+    color: #fff;
+    text-align: center;
+}
+
+footer img {
+    height: 24px;
+}
+
+.instagram {
+    background: #FBF5DE;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background .2s ease, transform .2s ease, border-color .2s ease;
+    justify-content: start;
+}
+
+.fale-conosco {
+    background: #FBF5DE;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background .2s ease, transform .2s ease, border-color .2s ease;
+    justify-content: end;
+}
+
+.instagram:hover,
+.fale-conosco:hover {
+    outline: none;
+    transform: translateY(-1px);
 }
 
 .card {
@@ -234,46 +242,4 @@ footer p {
     border-radius: 8px;
     padding: 16px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, .08);
-}
-
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 10px;
-    }
-
-    .header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .imagem-logo h1 {
-        font-size: 1.8em;
-    }
-
-    .menu {
-        flex-direction: column;
-        gap: 5px;
-    }
-
-    .menu li {
-        margin: 5px 0;
-    }
-
-    .texto {
-        padding: 0 10px;
-    }
-
-    main {
-        padding: 10px;
-    }
-
-    footer {
-        font-size: 0.8em;
-        padding: 10px 30px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
 }
