@@ -9,6 +9,7 @@
     <meta name="description" content="O melhor lugar para comprar suas pizzas!">
     <title>Pizzaria Bella Massa</title>
     <link rel="icon" href="ASSETS/IMG/Antigas/Logo da Pizzaria Bell Massa (2).png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 
@@ -38,48 +39,56 @@
         </nav>
     </header>
     <main>
-        <div>
-            <section class="carrossel">
-                <div class="slides">
-                    <input type="radio" name="radio-btn" id="slide1" checked>
-                    <input type="radio" name="radio-btn" id="slide2">
-                    <input type="radio" name="radio-btn" id="slide3">
-                    <input type="radio" name="radio-btn" id="slide4">
-                    <input type="radio" name="radio-btn" id="slide5">
-                    <input type="radio" name="radio-btn" id="slide6">
-                    <input type="radio" name="radio-btn" id="slide7">
-                    <div class="slide first">
-                        <img src="ASSETS/IMG/Carrossel/1.png" alt="Pizza Calabresa">
-                    </div>
-                    <div class="slide">
-                        <img src="ASSETS/IMG/Carrossel/2.png" alt="Pizza 4 Queijos">
-                    </div>
-                    <div class="slide">
-                        <img src="ASSETS/IMG/Carrossel/3.png" alt="Pizza Portuguesa">
-                    </div>
-                    <div class="slide">
-                        <img src="ASSETS/IMG/Carrossel/4.png" alt="Pizza Chocolate">
-                    </div>
-                    <div class="slide">
-                        <img src="ASSETS/IMG/Carrossel/5.png" alt="Pizza Frango com Catupiry">
-                    </div>
-                    <div class="slide">
-                        <img src="ASSETS/IMG/Carrossel/6.png" alt="Pizza Marguerita">
-                    </div>
-                    <div class="slide">
-                        <img src="ASSETS/IMG/Carrossel/7.png" alt="Venha Conhecer">
-                    </div>
-                    <div class="navigation-manual">
-                        <label for="slide1" class="manual-btn" aria-label="Slide 1"></label>
-                        <label for="slide2" class="manual-btn" aria-label="Slide 2"></label>
-                        <label for="slide3" class="manual-btn" aria-label="Slide 3"></label>
-                        <label for="slide4" class="manual-btn" aria-label="Slide 4"></label>
-                        <label for="slide5" class="manual-btn" aria-label="Slide 5"></label>
-                        <label for="slide6" class="manual-btn" aria-label="Slide 6"></label>
-                        <label for="slide7" class="manual-btn" aria-label="Slide 7"></label>
-                    </div>
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                    aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+                    aria-label="Slide 7"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="ASSETS/IMG/Carrossel/1.png" class="d-block w-100" alt="...">
                 </div>
-            </section>
+                <div class="carousel-item">
+                    <img src="ASSETS/IMG/Carrossel/2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="ASSETS/IMG/Carrossel/3.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="ASSETS/IMG/Carrossel/4.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="ASSETS/IMG/Carrossel/5.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="ASSETS/IMG/Carrossel/6.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="ASSETS/IMG/Carrossel/7.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
         <br>
         <hr>
@@ -161,6 +170,48 @@
                         </a>
                     </li>
                 </ul>
+
+                <br>
+                <br>
+
+                <h3>Conheça um pouco</h3>
+                <ul>
+                    <li>
+                        <a href="HTML/sobrenos.html">
+                            <p> A Bella Massa é um site criado como projeto escolar no curso Técnico em Desenvolvimento
+                                de Sistemas, com o objetivo de praticar design,
+                                front-end e experiência do usuário. O site não representa uma pizzaria real, servindo
+                                apenas para fins educacionais.
+
+                                <p>Ele apresenta um cardápio fictício, montagem interativa de pizzas (salgadas e doces),
+                                    um fluxo de pagamento simulado e layout responsivo.</p>
+
+                                <p>O projeto surgiu no 1º ano do curso técnico, evoluindo de uma simples ideia para um
+                                    exemplo de boas práticas de desenvolvimento web.</p>
+
+                                <p>Criado por Guilherme Pereira, Caio Regio, Victor Volpi, Pedro Ailton, Enzo Bertoluci
+                                    e Davi Gato. A Bella Massa representa a transformação
+                                    de uma ideia escolar em um site funcional e criativo, com potencial de inspirar
+                                    negócios reais no futuro.</p>
+                                <img class="preview" src="ASSETS/IMG/Antigas/Frente da Pìzzaria.png"
+                                    alt="Frente da Pizzaria">
+                        </a>
+                    </li>
+                </ul>
+                <br>
+                <br>
+                <h3>Fale conosco</h3>
+                <ul>
+                    <li>
+                        <a href="HTML/contato.html">
+                            <p>Você pode entrar em contato para tirar dúvidas, relatar erros, dar dicas do que podemos
+                                melhorar, ou caso esteja interessado em ser contratado.
+                                Basta apenas você inserir seus dados (nome, email, telefone e o assunto da mensagem), na
+                                aba "Contato".</p>
+                            <img class="preview" src="ASSETS/IMG/Antigas/Cozinha.png" alt="Cozinha">
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </main>
@@ -172,8 +223,8 @@
         <a class="fale-conosco" href="HTML/contato.html">
             <img src="ASSETS/IMG/Icons/support.png" alt="Fale Conosco" title="Fale Conosco">
         </a>
-        </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="SCRIPT/script.js"></script>
 </body>
 
