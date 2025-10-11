@@ -12,7 +12,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
+    padding: 15px;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -36,6 +36,7 @@ header h1 {
     margin: 0;
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
     text-align: center;
     justify-content: center;
     cursor: default;
@@ -52,14 +53,25 @@ header ul li {
     margin: 0 15px;
 }
 
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header ul li a:hover {
+    text-decoration: none;
+    background-color: #C83F12;
+    border-color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
 nav ul li a {
     border: 2px solid transparent;
     padding: 5px 10px;
     border-radius: 5px;
     transition: all 0.3s ease;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
 }
 
 nav ul li a:hover {
@@ -127,7 +139,6 @@ nav ul li a:hover {
 }
 
 main {
-    padding: 10px 30px;
     background-color: #FBF5DE;
 }
 
@@ -135,96 +146,6 @@ main {
 p {
     color: #FF8C00;
     font-size: 1.2em;
-}
-
-.carrossel {
-    width: 100%;
-    max-width: 1100px;
-    max-height: 1500px;
-    height: auto;
-    overflow: hidden;
-    margin: 0px auto;
-    border-radius: 15px;
-    position: relative;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.carrossel img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.slides input {
-    display: none;
-}
-
-.slides {
-    width: 600%;
-    display: flex;
-    height: 100%;
-}
-
-.slide {
-    flex: 0 0 calc(100% / 6);
-    width: calc(100% / 6);
-    transition: 0.6s ease;
-}
-
-.slide img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-#slide1:checked~.first {
-    margin-left: 0;
-}
-
-#slide2:checked~.first {
-    margin-left: -16.6667%;
-}
-
-#slide3:checked~.first {
-    margin-left: -33.3333%;
-}
-
-#slide4:checked~.first {
-    margin-left: -50%;
-}
-
-#slide5:checked~.first {
-    margin-left: -66.6667%;
-}
-
-#slide6:checked~.first {
-    margin-left: -83.3333%;
-}
-
-#slide7:checked~.first {
-    margin-left: -100%;
-}
-
-.navigation-manual {
-    position: absolute;
-    width: 100%;
-    bottom: 15px;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-.manual-btn {
-    border: 2px solid white;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.manual-btn:hover {
-    background: white;
 }
 
 .cardapio {
@@ -289,19 +210,9 @@ p {
     margin-top: 12px;
     border-radius: 10px;
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
-    opacity: 0;
-    max-height: 0;
-    transform: translateY(6px);
-    transition: opacity .2s ease, max-height .25s ease, transform .2s ease;
     display: block;
-    pointer-events: none;
     object-fit: cover;
-}
-
-.categoria ul li:hover .preview {
-    opacity: 1;
     max-height: 220px;
-    transform: translateY(0);
 }
 
 .categoria a {
@@ -336,7 +247,6 @@ footer img {
 }
 
 .instagram {
-    background: #FBF5DE;
     border: 2px solid #fff;
     color: #fff;
     padding: 8px 14px;
@@ -347,7 +257,6 @@ footer img {
 }
 
 .fale-conosco {
-    background: #FBF5DE;
     border: 2px solid #fff;
     color: #fff;
     padding: 8px 14px;
@@ -361,4 +270,5 @@ footer img {
 .fale-conosco:hover {
     outline: none;
     transform: translateY(-1px);
+    background-color: #C83F12;
 }
