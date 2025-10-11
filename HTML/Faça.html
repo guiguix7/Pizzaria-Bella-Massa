@@ -39,15 +39,26 @@
     <main>
         <div class="pizza-customização">
             <div class="opções">
-                <h1>Meia ou Inteira</h1>
-                <div class="opção">
-                    <input type="radio" id="meia" name="tamanho" value="Meia">
-                    <label for="meia">Meia (2 Sabores)</label>
-                </div>
-                <div class="opção">
-                    <input type="radio" id="inteira" name="tamanho" value="Inteira">
-                    <label for="inteira">Inteira (1 Sabor)</label>
-                </div>
+                <form class="grupo-opcoes">
+                    <div class="titulo-opcoes">
+                        <h1>Meia ou Inteira</h1>
+                        <button type="reset" class="limpar-btn" aria-label="Limpar seleção">Limpar</button>
+                    </div>
+                    <br>
+
+                    <div class="opção">
+                        <input type="radio" id="inteira" name="tamanho" value="Inteira">
+                        <label for="inteira">Inteira (1 Sabor)
+                            <p class="descricao">Escolha 1 sabor.</p>
+                        </label>
+                    </div>
+                    <div class="opção">
+                        <input type="radio" id="meia" name="tamanho" value="Meia">
+                        <label for="meia">Meia (2 Sabores)
+                            <p class="descricao">Escolha 2 sabores diferentes.</p>
+                        </label>
+                    </div>
+                </form>
             </div>
         </div>
     </main>
@@ -55,172 +66,221 @@
     <main>
         <div class="pizza-customização">
             <div class="opções">
-                <h1>Escolha o Tipo de Recheio:</h1>
-                <div class="opção">
-                    <input type="radio" id="recheio1" name="recheio" value="Calabresa">
-                    <label for="recheio1">
-                        <p>Calabresa</p>
-                        <p class="preco">+ R$ --,--</p>
-                    </label>
-                </div>
-                <div class="opção">
-                    <input type="radio" id="recheio2" name="recheio" value="Margherita">
-                    <label for="recheio2">
-                        <p>Margherita</p>
-                        <p class="preco">+ R$ --,--</p>
-                    </label>
-                </div>
-                <div class="opção">
-                    <input type="radio" id="recheio3" name="recheio" value="Pepperoni">
-                    <label for="recheio3">
-                        <p>Pepperoni</p>
-                        <p class="preco">+ R$ --,--</p>
-                    </label>
-                </div>
-                <div class="opção">
-                    <input type="radio" id="recheio4" name="recheio" value="Frango">
-                    <label for="recheio4">
-                        <p>Frango</p>
-                        <p class="preco">+ R$ --,--</p>
-                    </label>
-                </div>
+                <form class="grupo-opcoes">
+                    <div class="titulo-opcoes">
+                        <h1>Escolha o Sabor:</h1>
+                        <button type="reset" class="limpar-btn" aria-label="Limpar seleção">Limpar</button>
+                    </div>
+                    <br>
+                    <div class="opção">
+                        <input type="radio" id="recheio1" name="recheio" value="Calabresa">
+                        <label for="recheio1">
+                            <p>Calabresa</p>
+                            <p class="preco">+ R$ --,--</p>
+                            <p class="descricao">Mussarela, calabresa fatiada, cebola e orégano.</p>
+                        </label>
+                    </div>
+                    <div class="opção">
+                        <input type="radio" id="recheio2" name="recheio" value="Margherita">
+                        <label for="recheio2">
+                            <p>Margherita</p>
+                            <p class="preco">+ R$ --,--</p>
+                            <p class="descricao">Molho de tomate, mussarela, tomate e manjericão.</p>
+                        </label>
+                    </div>
+                    <div class="opção">
+                        <input type="radio" id="recheio3" name="recheio" value="Pepperoni">
+                        <label for="recheio3">
+                            <p>Pepperoni</p>
+                            <p class="preco">+ R$ --,--</p>
+                            <p class="descricao">Mussarela e fatias generosas de pepperoni.</p>
+                        </label>
+                    </div>
+                    <div class="opção">
+                        <input type="radio" id="recheio4" name="recheio" value="Frango">
+                        <label for="recheio4">
+                            <p>Frango</p>
+                            <p class="preco">+ R$ --,--</p>
+                            <p class="descricao">Frango desfiado temperado e mussarela cremosa.</p>
+                        </label>
+                    </div>
+                </form>
             </div>
         </div>
     </main>
     <main>
         <div class="pizza-customização">
             <div class="opções">
-                <h1>Escolha o Tipo de Molho:</h1>
-                <div class="opção">
-                    <input type="radio" id="molho1" name="molho" value="Molho de Tomate">
-                    <label for="molho1">
-                        <p> Molho de Tomate</p>
-                        <p class="preco">+ R$ --,--</p>
-                    </label>
-                </div>
-                <div class="opção">
-                    <input type="radio" id="molho2" name="molho" value="Molho Branco">
-                    <label for="molho2">
-                        <p> Molho Branco</p>
-                        <p class="preco">+ R$ --,--</p>
-                    </label>
-                </div>
+                <form class="grupo-opcoes">
+                    <div class="titulo-opcoes">
+                        <h1>Escolha o Molho:</h1>
+                        <button type="reset" class="limpar-btn" aria-label="Limpar seleção">Limpar</button>
+                    </div>
+                    <br>
+                    <div class="opção">
+                        <input type="radio" id="molho1" name="molho" value="Molho de Tomate">
+                        <label for="molho1">
+                            <p> Molho de Tomate</p>
+                            <p class="preco">+ R$ --,--</p>
+                            <p class="descricao">Clássico molho de tomate levemente temperado.</p>
+                        </label>
+                    </div>
+                    <div class="opção">
+                        <input type="radio" id="molho2" name="molho" value="Molho Branco">
+                        <label for="molho2">
+                            <p> Molho Branco</p>
+                            <p class="preco">+ R$ --,--</p>
+                            <p class="descricao">Cremoso e suave, ideal para combinar queijos.</p>
+                        </label>
+                    </div>
+                </form>
             </div>
         </div>
     </main>
     <main>
         <div class="pizza-customização">
             <div class="opções">
-                <h1>Escolha o Tipo de Queijo:</h1>
-                <div class="opção">
-                    <input type="radio" id="queijo1" name="queijo" value="Mussarela">
-                    <label for="queijo1">
-                        <p> Mussarela</p>
-                        <p class="preco">+ R$ --,--</p>
-                    </label>
-                </div>
-                <div class="opção">
-                    <input type="radio" id="queijo2" name="queijo" value="Catupiry">
-                    <label for="queijo2">
-                        <p> Catupiry</p>
-                        <p class="preco">+ R$ --,--</p>
-                    </label>
-                </div>
-                <div class="opção">
-                    <input type="radio" id="queijo3" name="queijo" value="Parmesão">
-                    <label for="queijo3">
-                        <p> Parmesão</p>
-                        <p class="preco">+ R$ --,--</p>
-                    </label>
-                </div>
-                <div class="opção">
-                    <input type="radio" id="queijo4" name="queijo" value="Provolone">
-                    <label for="queijo4">
-                        <p> Provolone</p>
-                        <p class="preco">+ R$ --,--</p>
-                    </label>
-                </div>
-                <div class="opção">
-                    <input type="radio" id="queijo5" name="queijo" value="Cheddar">
-                    <label for="queijo5">
-                        <p> Cheddar</p>
-                        <p class="preco">+ R$ --,--</p>
-                    </label>
-                </div>
+                <form class="grupo-opcoes">
+                    <div class="titulo-opcoes">
+                        <h1>Escolha o Tipo de Queijo:</h1>
+                        <button type="reset" class="limpar-btn" aria-label="Limpar seleção">Limpar</button>
+                    </div>
+                    <br>
+                    <div class="opção">
+                        <input type="radio" id="queijo1" name="queijo" value="Mussarela">
+                        <label for="queijo1">
+                            <p> Mussarela</p>
+                            <p class="preco">+ R$ --,--</p>
+                            <p class="descricao">Derretida e clássica, a preferida de todos.</p>
+                        </label>
+                    </div>
+                    <div class="opção">
+                        <input type="radio" id="queijo2" name="queijo" value="Catupiry">
+                        <label for="queijo2">
+                            <p> Catupiry</p>
+                            <p class="preco">+ R$ --,--</p>
+                            <p class="descricao">Cremoso e marcante, dá um toque especial.</p>
+                        </label>
+                    </div>
+                    <div class="opção">
+                        <input type="radio" id="queijo3" name="queijo" value="Parmesão">
+                        <label for="queijo3">
+                            <p> Parmesão</p>
+                            <p class="preco">+ R$ --,--</p>
+                            <p class="descricao">Sabor intenso e levemente salgado.</p>
+                        </label>
+                    </div>
+                    <div class="opção">
+                        <input type="radio" id="queijo4" name="queijo" value="Provolone">
+                        <label for="queijo4">
+                            <p> Provolone</p>
+                            <p class="preco">+ R$ --,--</p>
+                            <p class="descricao">Aromático, com nota defumada característica.</p>
+                        </label>
+                    </div>
+                    <div class="opção">
+                        <input type="radio" id="queijo5" name="queijo" value="Cheddar">
+                        <label for="queijo5">
+                            <p> Cheddar</p>
+                            <p class="preco">+ R$ --,--</p>
+                            <p class="descricao">Cremoso e alaranjado, sabor amanteigado.</p>
+                        </label>
+                    </div>
+                </form>
             </div>
         </div>
     </main>
     <main>
         <div class="pizza-customização">
             <div class="opções">
-                <h1>Escolha o Tipo de Borda:</h1>
-                <div class="opção">
-                    <input type="radio" id="borda1" name="borda" value="Borda sem Recheio">
-                    <label for="borda1">
-                        <p>Borda sem Recheio</p>
-                        <p class="preco">+ R$ --,--</p>
-                    </label>
-                </div>
-                <div class="opção">
-                    <input type="radio" id="borda2" name="borda" value="Borda Recheada com Catupiry">
-                    <label for="borda2">
-                        <p>Borda Recheada com Catupiry</p>
-                        <p class="preco">+ R$ --,--</p>
-                    </label>
-                </div>
-                <div class="opção">
-                    <input type="radio" id="borda3" name="borda" value="Borda Recheada com Cheddar">
-                    <label for="borda3">
-                        <p>Borda Recheada com Cheddar</p>
-                        <p class="preco">+ R$ --,--</p>
-                    </label>
-                </div>
+                <form class="grupo-opcoes">
+                    <div class="titulo-opcoes">
+                        <h1>Escolha o Tipo de Borda:</h1>
+                        <button type="reset" class="limpar-btn" aria-label="Limpar seleção">Limpar</button>
+                    </div>
+                    <br>
+                    <div class="opção">
+                        <input type="radio" id="borda1" name="borda" value="Borda sem Recheio">
+                        <label for="borda1">
+                            <p>Borda sem Recheio</p>
+                            <p class="preco">+ R$ --,--</p>
+                            <p class="descricao">Clássica e leve, deixa a massa em destaque.</p>
+                        </label>
+                    </div>
+                    <div class="opção">
+                        <input type="radio" id="borda2" name="borda" value="Borda Recheada com Catupiry">
+                        <label for="borda2">
+                            <p>Borda Recheada com Catupiry</p>
+                            <p class="preco">+ R$ --,--</p>
+                            <p class="descricao">Recheio cremoso que derrete a cada mordida.</p>
+                        </label>
+                    </div>
+                    <div class="opção">
+                        <input type="radio" id="borda3" name="borda" value="Borda Recheada com Cheddar">
+                        <label for="borda3">
+                            <p>Borda Recheada com Cheddar</p>
+                            <p class="preco">+ R$ --,--</p>
+                            <p class="descricao">Cheddar cremoso e sabor marcante nas bordas.</p>
+                        </label>
+                    </div>
+                </form>
             </div>
         </div>
     </main>
     <main>
         <div class="pizza-customização">
             <div class="opções">
-                <h1>Escolha o Adicional:</h1>
-                <div class="opção">
-                    <input type="checkbox" id="frango" name="proteina">
-                    <label for="frango">
-                        <p>Frango</p>
-                        <p class="preco">+ R$ --,--</p>
-                    </label>
-                </div>
-                <div class="opção">
-                    <input type="checkbox" id="calabresa" name="proteina">
-                    <label for="calabresa">
-                        <p>Calabresa</p>
-                        <p class="preco">+ R$ --,--</p>
-                    </label>
-                </div>
-                <div class="opção">
-                    <input type="checkbox" id="pepperoni" name="proteina">
-                    <label for="pepperoni">
-                        <p>Pepperoni</p>
-                        <p class="preco">+ R$ --,--</p>
-                    </label>
-                </div>
-                <div class="opção">
-                    <input type="checkbox" id="bacon" name="proteina">
-                    <label for="bacon">
-                        <p>Bacon</p>
-                        <p class="preco">+ R$ --,--</p>
-                    </label>
-                </div>
-                <div class="opção">
-                    <input type="checkbox" id="presunto" name="proteina">
-                    <label for="presunto">
-                        <p>Presunto</p>
-                        <p class="preco">+ R$ --,--</p>
-                    </label>
-                </div>
+                <form class="grupo-opcoes">
+                    <div class="titulo-opcoes">
+                        <h1>Escolha o Adicional:</h1>
+                        <button type="reset" class="limpar-btn" aria-label="Limpar seleção">Limpar</button>
+                    </div>
+                    <br>
+                    <div class="opção">
+                        <input type="checkbox" id="frango" name="proteina">
+                        <label for="frango">
+                            <p>Frango</p>
+                            <p class="preco">+ R$ --,--</p>
+                            <p class="descricao">Desfiado e temperado, combina com catupiry.</p>
+                        </label>
+                    </div>
+                    <div class="opção">
+                        <input type="checkbox" id="calabresa" name="proteina">
+                        <label for="calabresa">
+                            <p>Calabresa</p>
+                            <p class="preco">+ R$ --,--</p>
+                            <p class="descricao">Fatiada, levemente picante e muito saborosa.</p>
+                        </label>
+                    </div>
+                    <div class="opção">
+                        <input type="checkbox" id="pepperoni" name="proteina">
+                        <label for="pepperoni">
+                            <p>Pepperoni</p>
+                            <p class="preco">+ R$ --,--</p>
+                            <p class="descricao">Clássico americano, picante e aromático.</p>
+                        </label>
+                    </div>
+                    <div class="opção">
+                        <input type="checkbox" id="bacon" name="proteina">
+                        <label for="bacon">
+                            <p>Bacon</p>
+                            <p class="preco">+ R$ --,--</p>
+                            <p class="descricao">Crocante e defumado, realça qualquer sabor.</p>
+                        </label>
+                    </div>
+                    <div class="opção">
+                        <input type="checkbox" id="presunto" name="proteina">
+                        <label for="presunto">
+                            <p>Presunto</p>
+                            <p class="preco">+ R$ --,--</p>
+                            <p class="descricao">Clássico e suave, presença garantida.</p>
+                        </label>
+                    </div>
+                </form>
             </div>
         </div>
         <div class="botao">
-            <a href="pagamentos.html"><button>Concluir - Total R$ --,--</button></a>
+            <a href="pagamentos.html"><button class="submit-btn">Concluir - Total R$ --,--</button></a>
         </div>
     </main>
 
