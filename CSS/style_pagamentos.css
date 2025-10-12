@@ -12,7 +12,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
+    padding: 15px;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -304,6 +304,7 @@ h3 {
 .card-imagem {
     background: #fff5e6;
     border-radius: 10px;
+    margin-top: 16px;
     padding: 18px 22px 26px;
     box-shadow: 0 6px 18px rgba(0, 0, 0, .08);
     border: 1px solid #f0dcc6;
@@ -397,7 +398,6 @@ footer img {
 }
 
 .instagram {
-    background: #FBF5DE;
     border: 2px solid #fff;
     color: #fff;
     padding: 8px 14px;
@@ -408,7 +408,6 @@ footer img {
 }
 
 .fale-conosco {
-    background: #FBF5DE;
     border: 2px solid #fff;
     color: #fff;
     padding: 8px 14px;
@@ -422,4 +421,5 @@ footer img {
 .fale-conosco:hover {
     outline: none;
     transform: translateY(-1px);
+    background-color: #C83F12;
 }
