@@ -12,7 +12,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
+    padding: 15px;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -215,7 +215,10 @@ main h3 {
     align-self: center;
 }
 
-/* radios customizados com fade no ponto interno */
+.opção input[type="checkbox"] {
+    transform: scale(1.1);
+}
+
 .opção input[type="radio"] {
     appearance: none;
     -webkit-appearance: none;
@@ -252,7 +255,11 @@ main h3 {
 }
 
 .opção input[type="radio"]:focus-visible {
-    box-shadow: 0 0 0 3px rgba(200, 63, 18, .25);
+    box-shadow: 0 0 0 3px rgba(200, 63, 18, 0.25);
+}
+
+.opção label p {
+    margin: 0;
 }
 
 .opção label {
@@ -263,10 +270,7 @@ main h3 {
     flex-wrap: wrap;
     cursor: pointer;
     gap: 8px;
-}
-
-.opção label p {
-    margin: 0;
+    align-items: center;
 }
 
 .opção .descricao {
@@ -303,6 +307,7 @@ main p {
     font-weight: bold;
     color: #FF4500;
     text-align: right;
+    padding: 5px 10px;
     min-width: 90px;
 }
 
