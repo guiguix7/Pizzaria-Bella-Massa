@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Gui, Davi, Victor">
-    <meta name="keywords" content="Pizza, Venda, Bella Masa, Pizzaria">
-    <meta name="description" content="O melhor lugar para comprar suas pizzas!">
-    <title>Pizzaria Bella Massa</title>
+    <meta name="keywords" content="Pizza, Venda, Bella Massa, Pizzaria, Itu, Comida, Delivery, Restaurante, Fictício">
+    <meta name="description" content="O melhor site de pizzaria para comprar suas pizzas!">
     <link rel="icon" href="ASSETS/IMG/Antigas/Logo da Pizzaria Bell Massa (2).png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/style.css">
+    <title>Pizzaria Bella Massa</title>
 </head>
 
 <body>
+    <!-- Cabeçalho -->
     <header>
         <div class="imagem-logo">
             <img src="ASSETS/IMG/Antigas/Logo da Pizzaria Bell Massa (2).png" alt="Logo da Pizzaria Bella Massa">
-            <h1>PIZZARIA BELLA MASSA</h1>
         </div>
         <br>
         <nav>
@@ -39,6 +39,7 @@
         </nav>
     </header>
     <main>
+        <!-- Carrossel -->
         <div id="carouselExampleIndicators" class="carousel slide">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -79,6 +80,7 @@
                     <img src="ASSETS/IMG/Carrossel/7.png" class="d-block w-100" alt="...">
                 </div>
             </div>
+            <!-- Controles do Carrossel -->
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -91,8 +93,8 @@
             </button>
         </div>
         <br>
-        <hr>
         <br>
+        <!-- Cardápio -->
         <div class="cardapio">
             <div class="categoria">
                 <br>
@@ -170,56 +172,90 @@
                         </a>
                     </li>
                 </ul>
-
                 <br>
                 <br>
-
-                <h3>Conheça um pouco</h3>
-                <ul>
-                    <li>
-                        <a href="HTML/sobrenos.html">
-                            <p> A Bella Massa é um site criado como projeto escolar no curso Técnico em Desenvolvimento
-                                de Sistemas, com o objetivo de praticar design,
-                                front-end e experiência do usuário. O site não representa uma pizzaria real, servindo
-                                apenas para fins educacionais.
-
-                                <p>Ele apresenta um cardápio fictício, montagem interativa de pizzas (salgadas e doces),
-                                    um fluxo de pagamento simulado e layout responsivo.</p>
-
-                                <p>O projeto surgiu no 1º ano do curso técnico, evoluindo de uma simples ideia para um
-                                    exemplo de boas práticas de desenvolvimento web.</p>
-
-                                <p>Criado por Guilherme Pereira, Caio Regio, Victor Volpi, Pedro Ailton, Enzo Bertoluci
-                                    e Davi Gato. A Bella Massa representa a transformação
-                                    de uma ideia escolar em um site funcional e criativo, com potencial de inspirar
-                                    negócios reais no futuro.</p>
-                                <img class="preview" src="ASSETS/IMG/Antigas/Frente da Pìzzaria.png"
-                                    alt="Frente da Pizzaria">
-                        </a>
-                    </li>
-                </ul>
+                <!-- Sobre Nós e Fale Conosco -->
+                <div class="sobre">
+                    <h3>Conheça um pouco</h3>
+                    <a href="HTML/sobrenos.html">
+                        <ul class="sobre-nos">
+                            <ul>
+                                <li>
+                                    <p>
+                                        A Bella Massa é um site criado como projeto escolar no curso Técnico em
+                                        Desenvolvimento
+                                        de Sistemas, com o objetivo de praticar design,
+                                        front-end e experiência do usuário. O site não representa uma pizzaria
+                                        real,
+                                        servindo
+                                        apenas para fins educacionais.
+                                    </p>
+                                    <p>
+                                        Ele apresenta um cardápio fictício, montagem interativa de pizzas
+                                        (salgadas
+                                        e
+                                        doces), um fluxo de pagamento simulado e layout responsivo.
+                                    </p>
+                                    <p>
+                                        O projeto surgiu no 1º ano do curso técnico, evoluindo de uma simples
+                                        ideia
+                                        para
+                                        um exemplo de boas práticas de desenvolvimento web.
+                                    </p>
+                                    <p>
+                                        Criado por Guilherme Pereira, Caio Regio, Victor Volpi, Pedro Ailton,
+                                        Enzo
+                                        Bertoluci e Davi Gato. A Bella Massa representa a transformação de uma
+                                        ideia
+                                        escolar em
+                                        um site funcional e criativo, com potencial de inspirar negócios reais
+                                        no
+                                        futuro.
+                                    </p>
+                                </li>
+                                <li>
+                                    <img class="frente" src="ASSETS/IMG/Antigas/Frente da Pìzzaria.png"
+                                        alt="Frente da Pizzaria">
+                                </li>
+                            </ul>
+                        </ul>
+                    </a>
+                </div>
                 <br>
                 <br>
-                <h3>Fale conosco</h3>
-                <ul>
-                    <li>
-                        <a href="HTML/contato.html">
-                            <p>Você pode entrar em contato para tirar dúvidas, relatar erros, dar dicas do que podemos
-                                melhorar, ou caso esteja interessado em ser contratado.
-                                Basta apenas você inserir seus dados (nome, email, telefone e o assunto da mensagem), na
-                                aba "Contato".</p>
-                            <img class="preview" src="ASSETS/IMG/Antigas/Cozinha.png" alt="Cozinha">
-                        </a>
-                    </li>
-                </ul>
+                <div class="fale-conosco">
+                    <h3>Fale conosco</h3>
+                    <a href="HTML/contato.html">
+                        <ul class="sobre-nos">
+                            <ul>
+                                <li>
+                                    <p>Você pode entrar em contato para tirar dúvidas, relatar erros, dar dicas
+                                        do
+                                        que
+                                        podemos
+                                        melhorar, ou caso esteja interessado em ser contratado.
+                                        Basta apenas você inserir seus dados (nome, email, telefone e o assunto
+                                        da
+                                        mensagem), na
+                                        aba "Contato".</p>
+                                </li>
+                                <li>
+                                    <img class="preview" src="ASSETS/IMG/Antigas/Cozinha.png" alt="Cozinha">
+                                </li>
+                            </ul>
+                        </ul>
+                    </a>
+                </div>
             </div>
-        </div>
     </main>
+    <!-- Rodapé -->
     <footer>
-        <a class="instagram" href="https://www.instagram.com/pizzaria.bella.massa_itu/" target="_blank"><img
-                src="ASSETS/IMG/Icons/instagram.png" alt="Instagram" title="Instagram"></a>
-        <p>WhatsApp: (11) 93415-4282 - Rua 7 de setembro, 123 – Centro</p>
+        <a class="instagram" href="https://www.instagram.com/pizzaria.bella.massa_itu/" target="_blank"
+            rel="noopener noreferrer"><img src="ASSETS/IMG/Icons/instagram.png" alt="Instagram" title="Instagram"
+                class="img-instagram"></a>
+        <p>WhatsApp: (11) 93415-4282 </p>
         <p>&copy; 2025 Pizzaria Bella Massa. Todos os direitos reservados.</p>
+        <p>Rua 7 de setembro, 123 – Centro</p>
         <a class="fale-conosco" href="HTML/contato.html">
             <img src="ASSETS/IMG/Icons/support.png" alt="Fale Conosco" title="Fale Conosco">
         </a>
