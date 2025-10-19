@@ -1,13 +1,19 @@
+:root {
+    --primary-color: #8A0000;
+    --secondary-color: #C83F12;
+    --background-color: #FFFDF0;
+}
+
 body {
     margin: 0;
     padding: 0;
-    background-color: #FFFDF0;
+    background-color: var(--background-color);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     line-height: 1.06;
 }
 
 header {
-    background-color: #8A0000;
+    background-color: var(--primary-color);
     color: white;
     display: flex;
     justify-content: space-between;
@@ -63,7 +69,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #C83F12;
+    background-color: var(--secondary-color);
     border-color: white;
 }
 
@@ -95,7 +101,7 @@ nav ul li a:hover {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #8A0000;
+    background-color: var(--primary-color);
     list-style: none;
     padding: 0;
     margin: 0;
@@ -116,7 +122,7 @@ nav ul li a:hover {
 }
 
 .submenu li a:hover {
-    background-color: #C83F12;
+    background-color: var(--secondary-color);
 }
 
 .dropdown:hover .submenu {
@@ -307,7 +313,7 @@ button:hover {
 }
 
 footer {
-    background-color: #8A0000;
+    background-color: var(--primary-color);
     color: #fff;
     padding: 24px 30px;
     position: relative;
@@ -333,7 +339,7 @@ footer img {
     height: 24px;
 }
 
-.instagram {
+footer .instagram {
     border: 2px solid #fff;
     color: #fff;
     padding: 8px 14px;
@@ -343,7 +349,7 @@ footer img {
     justify-content: start;
 }
 
-.fale-conosco {
+footer .fale-conosco {
     border: 2px solid #fff;
     color: #fff;
     padding: 8px 14px;
@@ -353,9 +359,9 @@ footer img {
     justify-content: end;
 }
 
-.instagram:hover,
-.fale-conosco:hover {
+footer .instagram:hover,
+footer .fale-conosco:hover {
     outline: none;
     transform: translateY(-1px);
-    background-color: #C83F12;
+    background-color: var(--secondary-color);
 }
